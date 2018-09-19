@@ -1,0 +1,27 @@
+<level texture='monstersheet1'>
+<sprite type = 'Hero.HeroSprite' x='55' y='40'/>
+<sprite type = 'Bullet.BulletSprite' x='0' y='0' width='10' height='10' angle='0' restitution='0.5' static='false' friction='0.5' density='3' spawnEvent='onShoot'/>
+
+<!-- BEGIN Monster construction -->
+<sprite visual="dynamite.png" type="Bomb.BombSprite" controll_level="5" x="761" y="39" width="80" height="80"/>
+<sprite _label="brick" _color="0x00ff55" visual="rect.png" type="Beam.BeamSprite" controll_level="6" x="760" y="94" width="79" height="23" angle="0" restitution="0.2" static="false" friction="0.5" density="5"/>
+<sprite _label="brick" _color="0x00ff55" visual="rect.png" type="Beam.BeamSprite" controll_level="6" x="760" y="121" width="79" height="23" angle="0" restitution="0.2" static="false" friction="0.5" density="5"/>
+<sprite _label="brick" _color="0x00ff55" visual="rect.png" type="Beam.BeamSprite" controll_level="6" x="759" y="150" width="79" height="23" angle="0" restitution="0.2" static="false" friction="0.5" density="5"/>
+<sprite _label="brick" _color="0x00ff55" visual="rect.png" type="Beam.BeamSprite" controll_level="6" x="759" y="179" width="79" height="23" angle="0" restitution="0.2" static="false" friction="0.5" density="1"/>
+<sprite visual="boulder.png" type="Friend.FriendSprite" controll_level="5" x="653" y="62" width="128" height="128" angle="0" restitution="0.2" static="false" friction="0.5" density="1" firstframe="boulder.png"/>
+<sprite visual="boulder.png" type="Friend.FriendSprite" controll_level="5" x="869" y="62" width="128" height="128" angle="0" restitution="0.2" static="false" friction="0.5" density="1" firstframe="boulder.png"/>
+<sprite _label="bar_long" _color="0x00ff55" visual="bar_long.png" type="Beam.BeamSprite" controll_level="6" x="844" y="333" width="339" height="36" angle="88" restitution="0.2" static="true" friction="0.5" density="5" firstframe="bar_long.png"/>
+<sprite _label="brtittle" _color="0x00ff55" visual="brittle_brick.png" type="Beam.BeamSprite" controll_level="6" x="1223" y="109" width="240" height="36" angle="74" restitution="0.2" static="true" friction="0.5" density="20" classname="Destructable" firstframe="rect.png" setName="dBeam"/>
+<sprite _label="brtittle" _color="0x00ff55" visual="brittle_brick.png" type="Beam.BeamSprite" controll_level="6" x="1426" y="102" width="240" height="36" angle="74" restitution="0.2" static="true" friction="0.5" density="20" classname="Destructable" firstframe="rect.png" setName="dBeam"/>
+<sprite _label="brtittle" _color="0x00ff55" visual="brittle_brick.png" type="Beam.BeamSprite" controll_level="6" x="1535" y="98" width="240" height="36" angle="114" restitution="0.2" static="true" friction="0.5" density="20" classname="Destructable" firstframe="rect.png" setName="dBeam"/>
+<sprite _label="brtittle" _color="0x00ff55" visual="brittle_brick.png" type="Beam.BeamSprite" controll_level="6" x="1331" y="108" width="240" height="36" angle="114" restitution="0.2" static="true" friction="0.5" density="20" classname="Destructable" firstframe="rect.png" setName="dBeam"/>
+<sprite _label="brtittle" _color="0x00ff55" visual="brittle_brick.png" type="Beam.BeamSprite" controll_level="6" x="1372" y="244" width="240" height="36" angle="-1" restitution="0.2" static="false" friction="0.5" density="20" classname="Destructable" firstframe="rect.png" setName="dBeam"/>
+<sprite _label="pumpkin" _color="0xff0000" visual="pumpkin.png" type="Enemy.EnemySprite" controll_level="5" x="1278" y="35" width="64" height="64" angle="0" restitution="0.2" static="false" friction="0.5" density="5" classname="PumpkinSprite" firstframe="pumpkin.png"/>
+<sprite _label="pumpkin" _color="0xff0000" visual="pumpkin.png" type="Enemy.EnemySprite" controll_level="5" x="1487" y="33" width="64" height="64" angle="0" restitution="0.2" static="false" friction="0.5" density="5" classname="PumpkinSprite" firstframe="pumpkin.png"/>
+<sprite _label="pumpkin" _color="0xff0000" visual="pumpkin.png" type="Enemy.EnemySprite" controll_level="5" x="1377" y="163" width="64" height="64" angle="0" restitution="0.2" static="false" friction="0.5" density="5" classname="PumpkinSprite" firstframe="pumpkin.png"/>
+<sprite _label="pumpkin" _color="0xff0000" visual="pumpkin.png" type="Enemy.EnemySprite" controll_level="5" x="1285" y="297" width="64" height="64" angle="0" restitution="0.2" static="false" friction="0.5" density="5" classname="PumpkinSprite" firstframe="pumpkin.png"/>
+<sprite _label="green_blob" _color="0xff0000" visual="monsterblob.png" type="Enemy.EnemySprite" controll_level="5" x="1852" y="245" width="489" height="489" angle="0" restitution="0.2" static="false" friction="0.5" density="5" classname="BlobSprite" firstframe="monsterblob.png"/>
+<!-- END Monster construction -->
+
+<sprite type="Teleporter.TeleporterSprite" level_id="leveldata/menu"/>
+</level>

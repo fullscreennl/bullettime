@@ -1,0 +1,20 @@
+<level texture='monstersheet1'>
+<sprite type = 'Hero.HeroSprite' x='55' y='40'/>
+<sprite type = 'Bullet.BulletSprite' x='0' y='0' width='10' height='10' angle='0' restitution='0.5' static='false' friction='0.5' density='3' spawnEvent='onShoot'/>
+
+<!-- BEGIN Monster construction -->
+<sprite _label="green_blob" _color="0xff0000" visual="monsterblob.png" type="Enemy.EnemySprite" controll_level="5" x="680" y="29" width="54" height="54" angle="0" restitution="0.2" static="false" friction="0.5" density="5" classname="BlobSprite" firstframe="monsterblob.png"/>
+<sprite _label="green_blob" _color="0xff0000" visual="monsterblob.png" type="Enemy.EnemySprite" controll_level="5" x="1488" y="27" width="54" height="54" angle="0" restitution="0.2" static="false" friction="0.5" density="5" classname="BlobSprite" firstframe="monsterblob.png"/>
+<sprite type="Alert.Alert" controll_level="1" x="362" y="248" width="100" height="500" msg="smaller enemies#often jump higher#and move faster"/>
+<sprite _label="medical" _color="0xffff00" visual="medical.png" type="Pickup.PickupSprite" controll_level="4" x="2039" y="19" width="32" height="32" static="false" angle="0"/>
+<sprite _label="medical" _color="0xffff00" visual="medical.png" type="Pickup.PickupSprite" controll_level="4" x="1999" y="18" width="32" height="32" static="false" angle="0"/>
+<sprite _label="medical" _color="0xffff00" visual="medical.png" type="Pickup.PickupSprite" controll_level="4" x="2039" y="63" width="32" height="32" static="false" angle="0"/>
+<sprite _label="ammo" _color="0xffff00" visual="crate.png" type="Crate.CrateSprite" controll_level="4" x="452" y="14" width="32" height="32" static="false" angle="0"/>
+<sprite _label="ammo" _color="0xffff00" visual="crate.png" type="Crate.CrateSprite" controll_level="4" x="487" y="54" width="32" height="32" static="false" angle="0"/>
+<sprite _label="ammo" _color="0xffff00" visual="crate.png" type="Crate.CrateSprite" controll_level="4" x="487" y="14" width="32" height="32" static="false" angle="0"/>
+<sprite _label="bullet_time" _color="0xffff00" visual="bullet_time_pickup.png" type="BulletTimePickup.BulletTimePickupSprite" controll_level="4" x="2374" y="121" width="32" height="32" static="false" angle="0"/>
+<sprite _label="pumpkin" _color="0xff0000" visual="pumpkin.png" type="Enemy.EnemySprite" controll_level="5" x="2375" y="49" width="102" height="101" angle="0" restitution="0.2" static="false" friction="0.5" density="5" classname="PumpkinSprite" firstframe="pumpkin.png"/>
+<!-- END Monster construction -->
+
+<sprite type="Teleporter.TeleporterSprite" level_id="leveldata/level_0_1_2"/>
+</level>

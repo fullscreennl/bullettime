@@ -1,0 +1,21 @@
+<level texture='monstersheet1'>
+<sprite type = 'Hero.HeroSprite' x='55' y='40'/>
+<sprite type = 'Bullet.BulletSprite' x='0' y='0' width='10' height='10' angle='0' restitution='0.5' static='false' friction='0.5' density='3' spawnEvent='onShoot'/>
+
+<!-- BEGIN Monster construction -->
+<sprite _label="bar_long" _color="0x00ff55" visual="bar_long.png" type="Beam.BeamSprite" controll_level="6" x="1075" y="12" width="668" height="23" angle="0" restitution="0.2" static="true" friction="0.5" density="5" firstframe="bar_long.png" setName="Sprite_1"/>
+<sprite _label="brick" _color="0x00ff55" visual="rect.png" type="Beam.BeamSprite" controll_level="6" x="916" y="122" width="86" height="87" angle="-6" restitution="0.2" static="false" friction="0.5" density="5" setName="Sprite_2"/>
+<sprite _label="brick" _color="0x00ff55" visual="rect.png" type="Beam.BeamSprite" controll_level="6" x="1045" y="109" width="86" height="87" angle="14" restitution="0.2" static="false" friction="0.5" density="5" setName="Sprite_3"/>
+<sprite _label="brick" _color="0x00ff55" visual="rect.png" type="Beam.BeamSprite" controll_level="6" x="1176" y="135" width="86" height="87" angle="-23" restitution="0.2" static="false" friction="0.5" density="5" setName="Sprite_4"/>
+<sprite _label="Toxic_round" shape="circ" _color="0xaaaaff" visual="nucleair_round.png" type="ToxicUnit.ToxicUnit" controll_level="5" x="1037" y="248" width="102" height="101" angle="0" restitution="0.2" static="false" friction="0.5" density="1" classname="ToxicUnit" firstframe="nucleair_round.png"/>
+<sprite _label="Toxic_round" shape="circ" _color="0xaaaaff" visual="nucleair_round.png" type="ToxicUnit.ToxicUnit" controll_level="5" x="1040" y="353" width="102" height="101" angle="0" restitution="0.2" static="false" friction="0.5" density="1" classname="ToxicUnit" firstframe="nucleair_round.png"/>
+<sprite _label="Toxic_round" shape="circ" _color="0xaaaaff" visual="nucleair_round.png" type="ToxicUnit.ToxicUnit" controll_level="5" x="1038" y="459" width="102" height="101" angle="0" restitution="0.2" static="false" friction="0.5" density="1" classname="ToxicUnit" firstframe="nucleair_round.png"/>
+<sprite _label="pumpkin" _color="0xff0000" visual="pumpkin.png" type="Enemy.EnemySprite" controll_level="5" x="1159" y="265" width="102" height="101" angle="0" restitution="0.2" static="false" friction="0.5" density="5" classname="PumpkinSprite" firstframe="pumpkin.png"/>
+<sprite _label="green_blob" _color="0xff0000" visual="monsterblob.png" type="Enemy.EnemySprite" controll_level="5" x="1146" y="357" width="80" height="80" angle="0" restitution="0.2" static="false" friction="0.5" density="5" classname="BlobSprite" firstframe="monsterblob.png"/>
+<joint type="Joints.RevoluteJoint" id="0" body1="Sprite_2" body2="Sprite_1" motor_speed="-5.0" torque="10000.0" enable_motor="true" lower_angle="12" upper_angle="45" enable_limit="false" collide_connected="false" bx="785" by="11" b2_Xoffset="-290" b2_Yoffset="-1" ax="915" ay="123" b1_Xoffset="-1" b1_Yoffset="1"/>
+<joint type="Joints.RevoluteJoint" id="1" body1="Sprite_3" body2="Sprite_1" motor_speed="5.0" torque="10000.0" enable_motor="true" lower_angle="12" upper_angle="45" enable_limit="false" collide_connected="false" bx="1076" by="12" b2_Xoffset="1" b2_Yoffset="0" ax="1043" ay="107" b1_Xoffset="-2" b1_Yoffset="-2"/>
+<joint type="Joints.RevoluteJoint" id="2" body1="Sprite_4" body2="Sprite_1" motor_speed="-5.0" torque="10000.0" enable_motor="true" lower_angle="12" upper_angle="45" enable_limit="false" collide_connected="false" bx="1319" by="11" b2_Xoffset="244" b2_Yoffset="-1" ax="1174" ay="135" b1_Xoffset="-2" b1_Yoffset="0"/>
+<!-- END Monster construction -->
+
+<sprite type="Teleporter.TeleporterSprite" level_id="leveldata/level_6_2_2"/>
+</level>

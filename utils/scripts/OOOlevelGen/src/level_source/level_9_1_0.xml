@@ -1,0 +1,29 @@
+<level texture='monstersheet2'>
+<sprite type = 'Hero.HeroSprite' x='55' y='40'/>
+<sprite type = 'Bullet.BulletSprite' x='0' y='0' width='10' height='10' angle='0' restitution='0.5' static='false' friction='0.5' density='3' spawnEvent='onShoot'/>
+
+<!-- BEGIN Monster construction -->
+<EB type="Flunker" visual="Flunker.png" x="1853" y="247" width="500" height="500" controll_level="1" _displaylabel="true"/>
+<EB type="Flunker" visual="Flunker.png" x="2353" y="247" width="500" height="500" controll_level="1" _displaylabel="true"/>
+<sprite _label="brick" _color="0x00ff55" visual="rect.png" type="Beam.BeamSprite" controll_level="6" x="401" y="40" width="128" height="80" angle="0" restitution="0.2" static="true" friction="0.5" density="5"/>
+<sprite _label="brick" _color="0x00ff55" visual="rect.png" type="Beam.BeamSprite" controll_level="6" x="507" y="98" width="128" height="80" angle="0" restitution="0.2" static="true" friction="0.5" density="5"/>
+<sprite _label="brick" _color="0x00ff55" visual="rect.png" type="Beam.BeamSprite" controll_level="6" x="615" y="157" width="128" height="80" angle="0" restitution="0.2" static="true" friction="0.5" density="5"/>
+<sprite _label="brick" _color="0x00ff55" visual="rect.png" type="Beam.BeamSprite" controll_level="6" x="724" y="221" width="128" height="80" angle="0" restitution="0.2" static="true" friction="0.5" density="5"/>
+<sprite _label="brick" _color="0x00ff55" visual="rect.png" type="Beam.BeamSprite" controll_level="6" x="836" y="283" width="128" height="80" angle="0" restitution="0.2" static="true" friction="0.5" density="5"/>
+<sprite _label="bar_long" _color="0x00ff55" visual="bar_long.png" type="Beam.BeamSprite" controll_level="6" x="1202" y="307" width="376" height="31" angle="0" restitution="0.2" static="true" friction="0.5" density="5" firstframe="bar_long.png"/>
+<sprite _label="bar_long" _color="0x00ff55" visual="bar_long.png" type="Beam.BeamSprite" controll_level="6" x="1335" y="57" width="376" height="31" angle="22" restitution="0.2" static="true" friction="0.1" density="5" firstframe="bar_long.png"/>
+<sprite _label="bar_long" _color="0x00ff55" visual="bar_long.png" type="Beam.BeamSprite" controll_level="6" x="1484" y="283" width="188" height="37" angle="91" restitution="0.2" static="true" friction="0.5" density="5" firstframe="bar_long.png"/>
+<sprite visual="boulder.png" type="Friend.FriendSprite" controll_level="5" x="886" y="274" width="99" height="99" angle="0" restitution="0.2" static="true" friction="0.5" density="1" firstframe="boulder.png"/>
+<sprite _label="ammo" _color="0xffff00" visual="crate.png" type="Crate.CrateSprite" controll_level="4" x="733" y="18" width="32" height="32" static="false" angle="0" friction="0.1" density="3"/>
+<sprite _label="ammo" _color="0xffff00" visual="crate.png" type="Crate.CrateSprite" controll_level="4" x="810" y="24" width="32" height="32" static="false" angle="0" friction="0.1" density="3"/>
+<sprite _label="ammo" _color="0xffff00" visual="crate.png" type="Crate.CrateSprite" controll_level="4" x="751" y="63" width="32" height="32" static="false" angle="0" friction="0.1" density="3"/>
+<sprite _label="ammo" _color="0xffff00" visual="crate.png" type="Crate.CrateSprite" controll_level="4" x="685" y="28" width="32" height="32" static="false" angle="0" friction="0.1" density="3"/>
+<sprite _label="ammo" _color="0xffff00" visual="crate.png" type="Crate.CrateSprite" controll_level="4" x="925" y="22" width="32" height="32" static="false" angle="0" friction="0.1" density="3"/>
+<sprite _label="bar_long" _color="0x00ff55" visual="bar_long.png" type="Beam.BeamSprite" controll_level="6" x="1493" y="59" width="119" height="38" angle="91" restitution="0.2" static="true" friction="0.5" density="5" firstframe="bar_long.png"/>
+<sprite _label="ammo" _color="0xffff00" visual="crate.png" type="Crate.CrateSprite" controll_level="4" x="1118" y="16" width="32" height="32" static="false" angle="0" friction="0.1" density="3"/>
+<sprite _label="ammo" _color="0xffff00" visual="crate.png" type="Crate.CrateSprite" controll_level="4" x="981" y="14" width="32" height="32" static="false" angle="0" friction="0.1" density="3"/>
+<sprite _label="ammo" _color="0xffff00" visual="crate.png" type="Crate.CrateSprite" controll_level="4" x="925" y="22" width="32" height="32" static="false" angle="0" friction="0.1" density="3"/>
+<!-- END Monster construction -->
+
+<sprite type="Teleporter.TeleporterSprite" level_id="leveldata/level_9_1_1"/>
+</level>

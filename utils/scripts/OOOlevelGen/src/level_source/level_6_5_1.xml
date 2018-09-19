@@ -1,0 +1,18 @@
+<level texture='monstersheet5'>
+<sprite type = 'Hero.HeroSprite' x='200' y='40' spawnEvent='createHero' />
+<sprite type = 'Bullet.BulletSprite' classname='BigBulletSprite' x='0' y='0' width='40' height='40' angle='0' restitution='0.1' static='false' friction='0.9' density='5' spawnEvent='onCanonballReleased' groupIndex='-20'/>
+<sprite type = 'Bullet.BulletSprite' x='0' y='0' width='10' height='10' angle='0' restitution='0.5' static='false' friction='0.5' density='3' spawnEvent='onShoot'/>
+
+<!-- BEGIN Monster construction -->
+<EB _color="0xffffff" visual="KingofBlobs.png" type="KingofBlobs" x="2044" y="248" width="500" height="500" controll_level="1" _displaylabel="true"/>
+<sprite _label="ABCannon" _color="0xffee00" visual="tank_chassis.png" type="ABCannon.ABCannon" controll_level="1" x="368" y="134" width="263" height="263" angle="0" restitution="0.2" static="true" shape="circ" friction="0.5" density="5" classname="ABCannon" firstframe="tank_chassis.png" spritedata="3" groupIndex="-20"/>
+<sprite _label="brtittle" _color="0x00ff55" visual="brittle_brick.png" type="Beam.BeamSprite" controll_level="6" x="1625" y="107" width="212" height="58" angle="90" restitution="0.2" static="true" friction="0.5" density="20" classname="Destructable" firstframe="rect.png" setName="Sprite_47"/>
+<sprite _label="ABTarget" _color="0xffee00" visual="ABtarget.png" type="ABTargetScrollFocusSprite.ABTargetScrollFocusSprite" controll_level="1" x="2058" y="348" width="20" height="20" angle="0" restitution="0.2" static="false" shape="circ" friction="0.5" density="5" classname="ABTargetScrollFocusSprite" firstframe="pumpkin.png"/>
+<sprite _label="ammo" _color="0xffff00" visual="crate.png" type="Crate.CrateSprite" controll_level="4" x="1577" y="18" width="32" height="32" static="false" angle="0"/>
+<sprite _label="HeroReplacement" _color="0xffee00" visual="ABtarget.png" type="ABTargetScrollFocusSprite.ABTargetScrollFocusSprite" controll_level="1" x="2052" y="287" width="20" height="20" angle="0" restitution="0.2" static="false" shape="circ" friction="0.5" density="5" classname="HeroReplacementSprite" firstframe="pumpkin.png"/>
+<sprite _label="ammo" _color="0xffff00" visual="crate.png" type="Crate.CrateSprite" controll_level="4" x="2753" y="18" width="32" height="32" static="false" angle="0"/>
+<sprite _label="brick" _color="0x00ff55" visual="rect.png" type="Beam.BeamSprite" controll_level="6" x="232" y="55" width="134" height="42" angle="-71" restitution="0.2" static="true" friction="0.5" density="5"/>
+<!-- END Monster construction -->
+
+<sprite type="Teleporter.TeleporterSprite" level_id="leveldata/level_6_5_2"/>
+</level>

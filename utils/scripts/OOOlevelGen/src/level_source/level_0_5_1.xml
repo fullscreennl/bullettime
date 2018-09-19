@@ -1,0 +1,25 @@
+<level texture='monstersheet1'>
+<sprite type = 'Hero.HeroSprite' x='55' y='40'/>
+<sprite type = 'Bullet.BulletSprite' x='0' y='0' width='10' height='10' angle='0' restitution='0.5' static='false' friction='0.5' density='3' spawnEvent='onShoot'/>
+
+<!-- BEGIN Monster construction -->
+<EB _color="0xffffff" type="PumpkinBomber" x="2224" y="248" width="500" height="500" controll_level="1" _displaylabel="true"/>
+<sprite _label="ammo" _color="0xffff00" visual="crate.png" type="Crate.CrateSprite" controll_level="4" x="407" y="14" width="32" height="32" static="false" angle="0"/>
+<sprite _label="ammo" _color="0xffff00" visual="crate.png" type="Crate.CrateSprite" controll_level="4" x="369" y="14" width="32" height="32" static="false" angle="0"/>
+<sprite _label="ammo" _color="0xffff00" visual="crate.png" type="Crate.CrateSprite" controll_level="4" x="331" y="15" width="32" height="32" static="false" angle="0"/>
+<sprite visual="sign.png" type="Visual.VisualSprite" controll_level="1" x="617" y="25" width="250" height="50" firstframe="sign.png" msg="Destroy the car first!"/>
+<sprite _label="brtittle" _color="0x00ff55" visual="brittle_brick.png" type="Beam.BeamSprite" controll_level="6" x="1016" y="53" width="105" height="107" angle="0" restitution="0.2" static="false" friction="0.5" density="20" classname="Destructable" firstframe="rect.png" setName="dBeam"/>
+<sprite _label="brtittle" _color="0x00ff55" visual="brittle_brick.png" type="Beam.BeamSprite" controll_level="6" x="1016" y="385" width="105" height="107" angle="0" restitution="0.2" static="false" friction="0.5" density="20" classname="Destructable" firstframe="rect.png" setName="dBeam"/>
+<sprite _label="brtittle" _color="0x00ff55" visual="brittle_brick.png" type="Beam.BeamSprite" controll_level="6" x="1016" y="274" width="105" height="107" angle="0" restitution="0.2" static="false" friction="0.5" density="20" classname="Destructable" firstframe="rect.png" setName="dBeam"/>
+<sprite _label="brtittle" _color="0x00ff55" visual="brittle_brick.png" type="Beam.BeamSprite" controll_level="6" x="1016" y="164" width="105" height="107" angle="0" restitution="0.2" static="false" friction="0.5" density="20" classname="Destructable" firstframe="rect.png" setName="dBeam"/>
+<sprite _label="green_blob" _color="0xff0000" visual="monsterblob.png" type="Enemy.EnemySprite" controll_level="5" x="1115" y="39" width="76" height="76" angle="0" restitution="0.2" static="false" friction="0.5" density="5" classname="BlobSprite" firstframe="monsterblob.png"/>
+<sprite _label="green_blob" _color="0xff0000" visual="monsterblob.png" type="Enemy.EnemySprite" controll_level="5" x="788" y="37" width="76" height="76" angle="0" restitution="0.2" static="false" friction="0.5" density="5" classname="BlobSprite" firstframe="monsterblob.png"/>
+<sprite _label="ammo" _color="0xffff00" visual="crate.png" type="Crate.CrateSprite" controll_level="4" x="1018" y="460" width="32" height="32" static="false" angle="0"/>
+<sprite _label="ammo" _color="0xffff00" visual="crate.png" type="Crate.CrateSprite" controll_level="4" x="979" y="460" width="32" height="32" static="false" angle="0"/>
+<sprite _label="ammo" _color="0xffff00" visual="crate.png" type="Crate.CrateSprite" controll_level="4" x="1055" y="460" width="32" height="32" static="false" angle="0"/>
+<sprite _label="ammo" _color="0xffff00" visual="crate.png" type="Crate.CrateSprite" controll_level="4" x="2851" y="149" width="32" height="32" static="false" angle="0"/>
+<sprite _label="bullet_time" _color="0xffff00" visual="bullet_time_pickup.png" type="BulletTimePickup.BulletTimePickupSprite" controll_level="4" x="388" y="51" width="32" height="32" static="false" angle="0"/>
+<!-- END Monster construction -->
+
+<sprite type="Teleporter.TeleporterSprite" level_id="leveldata/level_0_5_2"/>
+</level>

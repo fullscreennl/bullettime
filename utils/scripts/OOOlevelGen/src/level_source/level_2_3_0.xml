@@ -1,0 +1,23 @@
+<level texture='monstersheet1'>
+<sprite type = 'Hero.HeroSprite' x='200' y='40' spawnEvent='createHero' />
+<sprite type = 'Bullet.BulletSprite' classname='BigBulletSprite' x='0' y='0' width='40' height='40' angle='0' restitution='0.1' static='false' friction='0.9' density='5' spawnEvent='onCanonballReleased' groupIndex='-20'/>
+<sprite type = 'Bullet.BulletSprite' x='0' y='0' width='10' height='10' angle='0' restitution='0.5' static='false' friction='0.5' density='3' spawnEvent='onShoot'/>
+
+<!-- BEGIN Monster construction -->
+<sprite _label="ABCannon" _color="0xffee00" visual="tank_chassis.png" type="ABCannon.ABCannon" controll_level="1" x="321" y="189" width="263" height="263" angle="0" restitution="0.2" static="true" shape="circ" friction="0.5" density="5" classname="ABCannon" firstframe="tank_chassis.png" spritedata="10" groupIndex="-20" setName="Sprite_12"/>
+<sprite _label="brick" _color="0x00ff55" visual="rect.png" type="Beam.BeamSprite" controll_level="6" x="184" y="474" width="50" height="47" angle="0" restitution="0.2" static="true" friction="0.5" density="5" setName="Sprite_14"/>
+<sprite _label="brick" _color="0x00ff55" visual="rect.png" type="Beam.BeamSprite" controll_level="6" x="195" y="24" width="50" height="47" angle="0" restitution="0.2" static="true" friction="0.5" density="5" setName="Sprite_13"/>
+<sprite _label="brick" _color="0x00ff55" visual="rect.png" type="Beam.BeamSprite" controll_level="6" x="1052" y="416" width="54" height="166" angle="0" restitution="0.2" static="true" friction="0.5" density="5" setName="Sprite_15"/>
+<sprite _label="Toxic_round" shape="circ" _color="0xaaaaff" visual="nucleair_round.png" type="ToxicUnit.ToxicUnit" controll_level="5" x="1056" y="210" width="61" height="61" angle="0" restitution="0.2" static="false" friction="0.5" density="2" classname="ToxicUnit" firstframe="nucleair_round.png" setName="Sprite_6"/>
+<sprite _label="brick" _color="0x00ff55" visual="rect.png" type="Beam.BeamSprite" controll_level="6" x="1373" y="365" width="166" height="32" angle="0" restitution="0.2" static="true" friction="0.5" density="5"/>
+<sprite _label="pumpkin" _color="0xff0000" visual="pumpkin.png" type="Enemy.EnemySprite" controll_level="5" x="1434" y="430" width="93" height="93" angle="0" restitution="0.2" static="false" friction="0.5" density="1" classname="PumpkinSprite" firstframe="pumpkin.png"/>
+<sprite visual="boulder.png" type="Friend.FriendSprite" controll_level="5" x="1293" y="434" width="96" height="96" angle="0" restitution="0.2" static="false" friction="0.5" density="1" firstframe="boulder.png"/>
+<sprite _label="ABTarget" _color="0xffee00" visual="ABtarget.png" type="ABTargetScrollFocusSprite.ABTargetScrollFocusSprite" controll_level="1" x="1216" y="326" width="20" height="20" angle="0" restitution="0.2" static="false" shape="circ" friction="0.5" density="5" classname="ABTargetScrollFocusSprite" firstframe="pumpkin.png"/>
+<joint type="Joints.DistanceJoint" id="10" body1="Sprite_13" body2="Sprite_12" damping="0.2" freq="20" texture_type="line" texture="rect.png" texture_width="20" b1_Xoffset="-2" b1_Yoffset="1" b2_Xoffset="-20" b2_Yoffset="-105" bx="301" by="84" ax="193" ay="25"/>
+<joint type="Joints.DistanceJoint" id="11" body1="Sprite_14" body2="Sprite_12" damping="0.2" freq="20" texture_type="line" texture="rect.png" texture_width="20" b1_Xoffset="-6" b1_Yoffset="5" b2_Xoffset="-6" b2_Yoffset="73" bx="315" by="262" ax="178" ay="479"/>
+<joint type="Joints.DistanceJoint" id="12" body1="Sprite_13" body2="Sprite_12" damping="0.2" freq="20" texture_type="line" texture="rect.png" texture_width="20" b1_Xoffset="-3" b1_Yoffset="0" b2_Xoffset="-5" b2_Yoffset="70" bx="316" by="259" ax="192" ay="24"/>
+<joint type="Joints.DistanceJoint" id="13" body1="Sprite_6" body2="Sprite_15" damping="0.2" freq="20" texture_type="line" texture="rect.png" texture_width="20" b1_Xoffset="0" b1_Yoffset="-2" b2_Xoffset="0" b2_Yoffset="-1" bx="1052" by="415" ax="1056" ay="208"/>
+<!-- END Monster construction -->
+
+<sprite type="Teleporter.TeleporterSprite" level_id="leveldata/level_2_3_1"/>
+</level>

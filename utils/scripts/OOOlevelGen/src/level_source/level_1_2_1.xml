@@ -1,0 +1,19 @@
+<level texture='monstersheet1'>
+<sprite type = 'Hero.HeroSprite' x='55' y='40'/>
+<sprite type = 'Bullet.BulletSprite' x='0' y='0' width='10' height='10' angle='0' restitution='0.5' static='false' friction='0.5' density='3' spawnEvent='onShoot'/>
+
+<!-- BEGIN Monster construction -->
+<sprite _label="brick" _color="0x00ff55" visual="rect.png" type="Beam.BeamSprite" controll_level="6" x="518" y="110" width="128" height="221" angle="0" restitution="0.2" static="false" friction="0.5" density="5"/>
+<sprite _label="brick" _color="0x00ff55" visual="rect.png" type="Beam.BeamSprite" controll_level="6" x="383" y="57" width="106" height="117" angle="0" restitution="0.2" static="false" friction="0.5" density="5"/>
+<sprite _label="s1" _color="0xff0000" visual="seqpumpkin1.png" type="Enemy.EnemySprite" controll_level="5" x="375" y="150" width="65" height="65" angle="0" restitution="0.2" static="false" friction="0.5" density="5" classname="SeqPumpkinSprite" firstframe="seqpumpkin.png" spritedata="1"/>
+<sprite _label="s2" _color="0xff0000" visual="seqpumpkin2.png" type="Enemy.EnemySprite" controll_level="5" x="618" y="29" width="56" height="56" angle="0" restitution="0.2" static="false" friction="0.5" density="5" classname="SeqPumpkinSprite" firstframe="seqpumpkin.png" spritedata="2"/>
+<sprite _label="s3" _color="0xff0000" visual="seqpumpkin3.png" type="Enemy.EnemySprite" controll_level="5" x="509" y="259" width="56" height="56" angle="0" restitution="0.2" static="false" friction="0.5" density="5" classname="SeqPumpkinSprite" firstframe="seqpumpkin.png" spritedata="3"/>
+<sprite _label="s4" _color="0xff0000" visual="seqpumpkin4.png" type="Enemy.EnemySprite" controll_level="5" x="835" y="51" width="49" height="49" angle="0" restitution="0.2" static="false" friction="0.5" density="5" classname="SeqPumpkinSprite" firstframe="seqpumpkin.png" spritedata="4"/>
+<sprite _label="s5" _color="0xff0000" visual="seqpumpkin5.png" type="Enemy.EnemySprite" controll_level="5" x="1189" y="64" width="58" height="58" angle="0" restitution="0.2" static="false" friction="0.5" density="5" classname="SeqPumpkinSprite" firstframe="seqpumpkin.png" spritedata="5"/>
+<sprite _label="spinner" _color="0xff0000" visual="lovable_alien.png" type="Enemy.EnemySprite" controll_level="5" x="705" y="44" width="102" height="101" angle="0" restitution="0.2" static="false" friction="0.5" density="5" classname="LoveAlienSprite" firstframe="lovable_alien.png"/>
+<sprite _label="ammo" _color="0xffff00" visual="crate.png" type="Crate.CrateSprite" controll_level="4" x="1367" y="19" width="32" height="32" static="false" angle="0"/>
+<sprite _label="green_blob" _color="0xff0000" visual="monsterblob.png" type="Enemy.EnemySprite" controll_level="5" x="1749" y="78" width="102" height="101" angle="0" restitution="0.2" static="false" friction="0.5" density="1" classname="BlobSprite" firstframe="monsterblob.png"/>
+<!-- END Monster construction -->
+
+<sprite type="Teleporter.TeleporterSprite" level_id="leveldata/level_1_2_2"/>
+</level>

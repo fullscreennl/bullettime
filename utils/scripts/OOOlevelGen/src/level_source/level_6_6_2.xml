@@ -1,0 +1,26 @@
+<level texture='monstersheet7'>
+<sprite type = 'Hero.HeroSprite' x='55' y='40'/>
+<sprite type = 'Bullet.BulletSprite' x='0' y='0' width='10' height='10' angle='0' restitution='0.5' static='false' friction='0.5' density='3' spawnEvent='onShoot'/>
+
+<!-- BEGIN Monster construction -->
+<EB _color="0xffffff" visual="LittleCrawler.png" type="LittleCrawler" x="1998" y="247" width="500" height="500" controll_level="1" _displaylabel="true"/>
+<sprite _label="s1" _color="0xff0000" visual="seqpumpkin1.png" type="Enemy.EnemySprite" controll_level="5" x="210" y="48" width="80" height="80" angle="0" restitution="0.2" static="false" friction="0.5" density="5" classname="SeqPumpkinSprite" firstframe="seqpumpkin.png" spritedata="1"/>
+<sprite _label="s2" _color="0xff0000" visual="seqpumpkin2.png" type="Enemy.EnemySprite" controll_level="5" x="183" y="178" width="102" height="101" angle="0" restitution="0.2" static="false" friction="0.5" density="5" classname="SeqPumpkinSprite" firstframe="seqpumpkin.png" spritedata="2"/>
+<sprite _label="s3" _color="0xff0000" visual="seqpumpkin3.png" type="Enemy.EnemySprite" controll_level="5" x="2640" y="52" width="102" height="101" angle="0" restitution="0.2" static="false" friction="0.5" density="5" classname="SeqPumpkinSprite" firstframe="seqpumpkin.png" spritedata="3"/>
+<sprite _label="s4" _color="0xff0000" visual="seqpumpkin4.png" type="Enemy.EnemySprite" controll_level="5" x="2468" y="53" width="102" height="101" angle="0" restitution="0.2" static="false" friction="0.5" density="5" classname="SeqPumpkinSprite" firstframe="seqpumpkin.png" spritedata="4"/>
+<sprite _label="s5" _color="0xff0000" visual="seqpumpkin5.png" type="Enemy.EnemySprite" controll_level="5" x="1399" y="50" width="102" height="101" angle="0" restitution="0.2" static="false" friction="0.5" density="5" classname="SeqPumpkinSprite" firstframe="seqpumpkin.png" spritedata="5"/>
+<sprite _label="bar_long" _color="0x00ff55" visual="bar_long.png" type="Beam.BeamSprite" controll_level="6" x="446" y="115" width="632" height="22" angle="0" restitution="0.2" static="true" friction="0.5" density="5" firstframe="bar_long.png"/>
+<sprite _label="bar_long" _color="0x00ff55" visual="bar_long.png" type="Beam.BeamSprite" controll_level="6" x="146" y="54" width="101" height="36" angle="85" restitution="0.2" static="true" friction="0.5" density="5" firstframe="bar_long.png"/>
+<sprite _label="bar_long" _color="0x00ff55" visual="bar_long.png" type="Beam.BeamSprite" controll_level="6" x="1509" y="263" width="378" height="30" angle="-37" restitution="0.2" static="true" friction="0.5" density="5" firstframe="bar_long.png"/>
+<sprite _label="bar_long" _color="0x00ff55" visual="bar_long.png" type="Beam.BeamSprite" controll_level="6" x="1064" y="245" width="680" height="26" angle="23" restitution="0.2" static="true" friction="0.5" density="5" firstframe="bar_long.png"/>
+<sprite visual="boulder.png" type="Friend.FriendSprite" controll_level="5" x="1705" y="45" width="90" height="90" angle="0" restitution="0.2" static="false" friction="0.5" density="1" firstframe="boulder.png"/>
+<sprite visual="boulder.png" type="Friend.FriendSprite" controll_level="5" x="2310" y="45" width="90" height="90" angle="0" restitution="0.2" static="false" friction="0.5" density="1" firstframe="boulder.png"/>
+<sprite _label="ammo" _color="0xffff00" visual="crate.png" type="Crate.CrateSprite" controll_level="4" x="867" y="17" width="32" height="32" static="false" angle="0"/>
+<sprite _label="ammo" _color="0xffff00" visual="crate.png" type="Crate.CrateSprite" controll_level="4" x="795" y="18" width="32" height="32" static="false" angle="0"/>
+<sprite _label="ammo" _color="0xffff00" visual="crate.png" type="Crate.CrateSprite" controll_level="4" x="941" y="17" width="32" height="32" static="false" angle="0"/>
+<sprite _label="ammo" _color="0xffff00" visual="crate.png" type="Crate.CrateSprite" controll_level="4" x="903" y="17" width="32" height="32" static="false" angle="0"/>
+<sprite _label="ammo" _color="0xffff00" visual="crate.png" type="Crate.CrateSprite" controll_level="4" x="941" y="17" width="32" height="32" static="false" angle="0"/>
+<!-- END Monster construction -->
+
+<sprite type="Teleporter.TeleporterSprite" level_id="leveldata/menu"/>
+</level>

@@ -1,0 +1,20 @@
+<level texture='monstersheet1'>
+<sprite type = 'Hero.HeroSprite' x='55' y='40'/>
+<sprite type = 'Bullet.BulletSprite' x='0' y='0' width='10' height='10' angle='0' restitution='0.5' static='false' friction='0.5' density='3' spawnEvent='onShoot'/>
+
+<!-- BEGIN Monster construction -->
+<sprite visual="dynamite.png" type="Bomb.BombSprite" controll_level="5" x="788" y="40" width="80" height="80" static="false"/>
+<sprite _label="brick" _color="0x00ff55" visual="rect.png" type="Beam.BeamSprite" controll_level="6" x="729" y="151" width="28" height="145" angle="0" restitution="0.2" static="true" friction="0.5" density="5" setName="Sprite_1"/>
+<sprite _label="brick" _color="0x00ff55" visual="rect.png" type="Beam.BeamSprite" controll_level="6" x="842" y="100" width="28" height="202" angle="0" restitution="0.2" static="true" friction="0.5" density="5" setName="Sprite_1"/>
+<sprite _label="ammo" _color="0xffff00" visual="crate.png" type="Crate.CrateSprite" controll_level="4" x="800" y="99" width="32" height="32" static="false" angle="-1"/>
+<sprite _label="ammo" _color="0xffff00" visual="crate.png" type="Crate.CrateSprite" controll_level="4" x="763" y="137" width="32" height="32" static="false" angle="-1"/>
+<sprite _label="Toxic_round" shape="circ" _color="0xaaaaff" visual="nucleair_round.png" type="ToxicUnit.ToxicUnit" controll_level="5" x="801" y="181" width="32" height="32" angle="0" restitution="0.2" static="false" friction="0.5" density="5" classname="ToxicUnit" firstframe="nucleair_round.png"/>
+<sprite _label="Toxic_round" shape="circ" _color="0xaaaaff" visual="nucleair_round.png" type="ToxicUnit.ToxicUnit" controll_level="5" x="764" y="209" width="32" height="32" angle="0" restitution="0.2" static="false" friction="0.5" density="5" classname="ToxicUnit" firstframe="nucleair_round.png"/>
+<sprite _label="Toxic_round" shape="circ" _color="0xaaaaff" visual="nucleair_round.png" type="ToxicUnit.ToxicUnit" controll_level="5" x="801" y="142" width="32" height="32" angle="0" restitution="0.2" static="false" friction="0.5" density="5" classname="ToxicUnit" firstframe="nucleair_round.png"/>
+<sprite _label="Toxic_round" shape="circ" _color="0xaaaaff" visual="nucleair_round.png" type="ToxicUnit.ToxicUnit" controll_level="5" x="763" y="174" width="32" height="32" angle="0" restitution="0.2" static="false" friction="0.5" density="5" classname="ToxicUnit" firstframe="nucleair_round.png"/>
+<EB _color="0xffffff" type="SlingerBall" x="2453" y="249" width="500" height="500" controll_level="1" _displaylabel="true"/>
+<sprite _label="ammo" _color="0xffff00" visual="crate.png" type="Crate.CrateSprite" controll_level="4" x="763" y="137" width="32" height="32" static="false" angle="-1"/>
+<!-- END Monster construction -->
+
+<sprite type="Teleporter.TeleporterSprite" level_id="leveldata/level_4_6_1"/>
+</level>

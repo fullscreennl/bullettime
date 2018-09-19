@@ -1,0 +1,35 @@
+<level texture='monstersheet7'>
+<sprite type = 'Hero.HeroSprite' x='55' y='40'/>
+<sprite type = 'Bullet.BulletSprite' x='0' y='0' width='10' height='10' angle='0' restitution='0.5' static='false' friction='0.5' density='3' spawnEvent='onShoot'/>
+
+<!-- BEGIN Monster construction -->
+<EB _color="0xffffff" visual="Stryder.png" type="Stryder" x="2346" y="248" width="500" height="500" controll_level="1" _displaylabel="true"/>
+<sprite _label="Toxic_square" shape="rect" _color="0xaaaaff" visual="nucleair_square.png" type="ToxicUnit.ToxicUnit" controll_level="5" x="490" y="52" width="102" height="101" angle="0" restitution="0.2" static="false" friction="0.5" density="5" classname="ToxicUnit" firstframe="nucleair_square.png"/>
+<sprite _label="Toxic_square" shape="rect" _color="0xaaaaff" visual="nucleair_square.png" type="ToxicUnit.ToxicUnit" controll_level="5" x="490" y="155" width="102" height="101" angle="0" restitution="0.2" static="false" friction="0.5" density="5" classname="ToxicUnit" firstframe="nucleair_square.png"/>
+<sprite _label="brick" _color="0x00ff55" visual="rect.png" type="Beam.BeamSprite" controll_level="6" x="486" y="481" width="35" height="36" angle="0" restitution="0.2" static="true" friction="0.5" density="5" setName="Sprite_8"/>
+<sprite _label="Toxic_round" shape="circ" _color="0xaaaaff" visual="nucleair_round.png" type="ToxicUnit.ToxicUnit" controll_level="5" x="673" y="449" width="102" height="101" angle="0" restitution="0.2" static="false" friction="0.5" density="5" classname="ToxicUnit" firstframe="nucleair_round.png" setName="Sprite_9"/>
+<sprite _label="brick" _color="0x00ff55" visual="rect.png" type="Beam.BeamSprite" controll_level="6" x="998" y="481" width="35" height="36" angle="0" restitution="0.2" static="true" friction="0.5" density="5" setName="Sprite_10"/>
+<sprite _label="brick" _color="0x00ff55" visual="rect.png" type="Beam.BeamSprite" controll_level="6" x="1348" y="481" width="35" height="36" angle="0" restitution="0.2" static="true" friction="0.5" density="5" setName="Sprite_12"/>
+<sprite _label="Toxic_round" shape="circ" _color="0xaaaaff" visual="nucleair_round.png" type="ToxicUnit.ToxicUnit" controll_level="5" x="1185" y="448" width="102" height="101" angle="0" restitution="0.2" static="false" friction="0.5" density="5" classname="ToxicUnit" firstframe="nucleair_round.png" setName="Sprite_11"/>
+<sprite _label="Toxic_square" shape="rect" _color="0xaaaaff" visual="nucleair_square.png" type="ToxicUnit.ToxicUnit" controll_level="5" x="1003" y="55" width="108" height="108" angle="0" restitution="0.2" static="false" friction="0.5" density="5" classname="ToxicUnit" firstframe="nucleair_square.png"/>
+<sprite _label="Toxic_square" shape="rect" _color="0xaaaaff" visual="nucleair_square.png" type="ToxicUnit.ToxicUnit" controll_level="5" x="1004" y="165" width="108" height="108" angle="0" restitution="0.2" static="false" friction="0.5" density="5" classname="ToxicUnit" firstframe="nucleair_square.png"/>
+<sprite _label="Toxic_square" shape="rect" _color="0xaaaaff" visual="nucleair_square.png" type="ToxicUnit.ToxicUnit" controll_level="5" x="1423" y="55" width="108" height="108" angle="0" restitution="0.2" static="false" friction="0.5" density="5" classname="ToxicUnit" firstframe="nucleair_square.png"/>
+<sprite _label="Toxic_square" shape="rect" _color="0xaaaaff" visual="nucleair_square.png" type="ToxicUnit.ToxicUnit" controll_level="5" x="1423" y="165" width="108" height="108" angle="0" restitution="0.2" static="false" friction="0.5" density="5" classname="ToxicUnit" firstframe="nucleair_square.png"/>
+<sprite _label="Toxic_round" shape="circ" _color="0xaaaaff" visual="nucleair_round.png" type="ToxicUnit.ToxicUnit" controll_level="5" x="1533" y="450" width="102" height="101" angle="0" restitution="0.2" static="false" friction="0.5" density="5" classname="ToxicUnit" firstframe="nucleair_round.png" setName="Sprite_13"/>
+<sprite _label="ammo" _color="0xffff00" visual="crate.png" type="Crate.CrateSprite" controll_level="4" x="316" y="15" width="32" height="32" static="false" angle="0"/>
+<sprite _label="ammo" _color="0xffff00" visual="crate.png" type="Crate.CrateSprite" controll_level="4" x="278" y="16" width="32" height="32" static="false" angle="0"/>
+<sprite _label="ammo" _color="0xffff00" visual="crate.png" type="Crate.CrateSprite" controll_level="4" x="240" y="17" width="32" height="32" static="false" angle="0"/>
+<sprite _label="ammo" _color="0xffff00" visual="crate.png" type="Crate.CrateSprite" controll_level="4" x="1804" y="53" width="32" height="32" static="false" angle="0"/>
+<sprite _label="ammo" _color="0xffff00" visual="crate.png" type="Crate.CrateSprite" controll_level="4" x="1779" y="16" width="32" height="32" static="false" angle="0"/>
+<sprite _label="ammo" _color="0xffff00" visual="crate.png" type="Crate.CrateSprite" controll_level="4" x="1887" y="16" width="32" height="32" static="false" angle="0"/>
+<sprite _label="ammo" _color="0xffff00" visual="crate.png" type="Crate.CrateSprite" controll_level="4" x="1851" y="16" width="32" height="32" static="false" angle="0"/>
+<sprite _label="ammo" _color="0xffff00" visual="crate.png" type="Crate.CrateSprite" controll_level="4" x="1874" y="53" width="32" height="32" static="false" angle="0"/>
+<sprite _label="ammo" _color="0xffff00" visual="crate.png" type="Crate.CrateSprite" controll_level="4" x="1839" y="53" width="32" height="32" static="false" angle="0"/>
+<sprite _label="ammo" _color="0xffff00" visual="crate.png" type="Crate.CrateSprite" controll_level="4" x="1815" y="15" width="32" height="32" static="false" angle="0"/>
+<joint type="Joints.DistanceJoint" id="0" body1="Sprite_9" body2="Sprite_8" damping="0.2" freq="20" texture_type="line" texture="rect.png" texture_width="20" b1_Xoffset="0" b1_Yoffset="1" b2_Xoffset="-1" b2_Yoffset="3" bx="485" by="484" ax="673" ay="450"/>
+<joint type="Joints.DistanceJoint" id="1" body1="Sprite_11" body2="Sprite_10" damping="0.2" freq="20" texture_type="line" texture="rect.png" texture_width="20" b1_Xoffset="1" b1_Yoffset="3" b2_Xoffset="0" b2_Yoffset="3" bx="998" by="484" ax="1186" ay="451"/>
+<joint type="Joints.DistanceJoint" id="2" body1="Sprite_13" body2="Sprite_12" damping="0.2" freq="20" texture_type="line" texture="rect.png" texture_width="20" b1_Xoffset="3" b1_Yoffset="-2" b2_Xoffset="1" b2_Yoffset="1" bx="1349" by="482" ax="1536" ay="448"/>
+<!-- END Monster construction -->
+
+<sprite type="Teleporter.TeleporterSprite" level_id="leveldata/menu"/>
+</level>

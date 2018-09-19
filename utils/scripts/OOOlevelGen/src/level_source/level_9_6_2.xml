@@ -1,0 +1,15 @@
+<level texture='monstersheet6'>
+<sprite type = 'Hero.HeroSprite' x='55' y='40'/>
+<sprite type = 'Bullet.BulletSprite' x='0' y='0' width='10' height='10' angle='0' restitution='0.5' static='false' friction='0.5' density='3' spawnEvent='onShoot'/>
+
+<!-- BEGIN Monster construction -->
+<EB type="MotorizedBall" visual="MotorizedBall.png" x="1567" y="250" width="500" height="500" controll_level="1" _displaylabel="true"/>
+<sprite _label="Toxic_round" shape="circ" _color="0xaaaaff" visual="nucleair_round.png" type="ToxicUnit.ToxicUnit" controll_level="5" x="1427" y="47" width="56" height="56" angle="0" restitution="0.2" static="false" friction="0.5" density="5" classname="ToxicUnit" firstframe="nucleair_round.png"/>
+<sprite _label="Toxic_round" shape="circ" _color="0xaaaaff" visual="nucleair_round.png" type="ToxicUnit.ToxicUnit" controll_level="5" x="1914" y="105" width="56" height="56" angle="0" restitution="0.2" static="false" friction="0.5" density="5" classname="ToxicUnit" firstframe="nucleair_round.png"/>
+<sprite _label="ammo" _color="0xffff00" visual="crate.png" type="Crate.CrateSprite" controll_level="4" x="2304" y="16" width="32" height="32" static="false" angle="-1"/>
+<sprite _label="ammo" _color="0xffff00" visual="crate.png" type="Crate.CrateSprite" controll_level="4" x="2340" y="15" width="32" height="32" static="false" angle="-1"/>
+<sprite _label="ammo" _color="0xffff00" visual="crate.png" type="Crate.CrateSprite" controll_level="4" x="2340" y="15" width="32" height="32" static="false" angle="-1"/>
+<!-- END Monster construction -->
+
+<sprite type="Teleporter.TeleporterSprite" level_id="leveldata/menu"/>
+</level>

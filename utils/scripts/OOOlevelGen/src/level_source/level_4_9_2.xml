@@ -1,0 +1,23 @@
+<level texture='monstersheet1'>
+<sprite type = 'Hero.HeroSprite' x='200' y='40' spawnEvent='createHero' />
+<sprite type = 'Bullet.BulletSprite' classname='BigBulletSprite' x='0' y='0' width='40' height='40' angle='0' restitution='0.1' static='false' friction='0.9' density='5' spawnEvent='onCanonballReleased' groupIndex='-20'/>
+<sprite type = 'Bullet.BulletSprite' x='0' y='0' width='10' height='10' angle='0' restitution='0.5' static='false' friction='0.5' density='3' spawnEvent='onShoot'/>
+
+<!-- BEGIN Monster construction -->
+<sprite _label="ABCannon" _color="0xffee00" visual="tank_chassis.png" type="ABCannon.ABCannon" controll_level="1" x="233" y="133" width="263" height="263" angle="0" restitution="0.2" static="true" shape="circ" friction="0.5" density="5" classname="ABCannon" firstframe="tank_chassis.png" spritedata="1" groupIndex="-20"/>
+<sprite _label="ammo" _color="0xffff00" visual="crate.png" type="Crate.CrateSprite" controll_level="4" x="2790" y="147" width="32" height="32" static="false" angle="0"/>
+<sprite _label="Toxic_square" shape="rect" _color="0xaaaaff" visual="nucleair_square.png" type="ToxicUnit.ToxicUnit" controll_level="5" x="1615" y="22" width="42" height="42" angle="0" restitution="0.2" static="false" friction="0.5" density="1" classname="ToxicUnit" firstframe="nucleair_square.png"/>
+<sprite _label="Toxic_square" shape="rect" _color="0xaaaaff" visual="nucleair_square.png" type="ToxicUnit.ToxicUnit" controll_level="5" x="1615" y="68" width="42" height="42" angle="0" restitution="0.2" static="false" friction="0.5" density="5" classname="ToxicUnit" firstframe="nucleair_square.png"/>
+<sprite _label="Toxic_square" shape="rect" _color="0xaaaaff" visual="nucleair_square.png" type="ToxicUnit.ToxicUnit" controll_level="5" x="1615" y="115" width="42" height="42" angle="0" restitution="0.2" static="false" friction="0.5" density="5" classname="ToxicUnit" firstframe="nucleair_square.png"/>
+<sprite _label="Toxic_square" shape="rect" _color="0xaaaaff" visual="nucleair_square.png" type="ToxicUnit.ToxicUnit" controll_level="5" x="1615" y="162" width="42" height="42" angle="0" restitution="0.2" static="false" friction="0.5" density="5" classname="ToxicUnit" firstframe="nucleair_square.png"/>
+<sprite _label="Toxic_square" shape="rect" _color="0xaaaaff" visual="nucleair_square.png" type="ToxicUnit.ToxicUnit" controll_level="5" x="1615" y="209" width="42" height="42" angle="0" restitution="0.2" static="false" friction="0.5" density="5" classname="ToxicUnit" firstframe="nucleair_square.png"/>
+<sprite _label="Toxic_square" shape="rect" _color="0xaaaaff" visual="nucleair_square.png" type="ToxicUnit.ToxicUnit" controll_level="5" x="1615" y="256" width="42" height="42" angle="0" restitution="0.2" static="false" friction="0.5" density="5" classname="ToxicUnit" firstframe="nucleair_square.png"/>
+<sprite _label="Toxic_square" shape="rect" _color="0xaaaaff" visual="nucleair_square.png" type="ToxicUnit.ToxicUnit" controll_level="5" x="1615" y="301" width="42" height="42" angle="0" restitution="0.2" static="false" friction="0.5" density="5" classname="ToxicUnit" firstframe="nucleair_square.png"/>
+<sprite _label="Toxic_square" shape="rect" _color="0xaaaaff" visual="nucleair_square.png" type="ToxicUnit.ToxicUnit" controll_level="5" x="1615" y="349" width="42" height="42" angle="0" restitution="0.2" static="false" friction="0.5" density="5" classname="ToxicUnit" firstframe="nucleair_square.png"/>
+<sprite _label="Toxic_square" shape="rect" _color="0xaaaaff" visual="nucleair_square.png" type="ToxicUnit.ToxicUnit" controll_level="5" x="1614" y="395" width="42" height="42" angle="0" restitution="0.2" static="false" friction="0.5" density="5" classname="ToxicUnit" firstframe="nucleair_square.png"/>
+<sprite _label="green_blob" _color="0xff0000" visual="monsterblob.png" type="Enemy.EnemySprite" controll_level="5" x="2190" y="34" width="68" height="68" angle="0" restitution="0.2" static="false" friction="0.5" density="5" classname="BlobSprite" firstframe="monsterblob.png"/>
+<sprite _label="ABTarget" _color="0xffee00" visual="ABtarget.png" type="ABTargetScrollFocusSprite.ABTargetScrollFocusSprite" controll_level="1" x="1614" y="443" width="20" height="20" angle="0" restitution="0.2" static="false" shape="circ" friction="0.5" density="5" classname="ABTargetScrollFocusSprite" firstframe="pumpkin.png"/>
+<!-- END Monster construction -->
+
+<sprite type="Teleporter.TeleporterSprite" level_id="leveldata/menu"/>
+</level>

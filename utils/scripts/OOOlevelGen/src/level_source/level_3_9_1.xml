@@ -1,0 +1,23 @@
+<level texture='monstersheet4'>
+<sprite type = 'Hero.HeroSprite' x='55' y='40'/>
+<sprite type = 'Bullet.BulletSprite' x='0' y='0' width='10' height='10' angle='0' restitution='0.5' static='false' friction='0.5' density='3' spawnEvent='onShoot'/>
+
+<!-- BEGIN Monster construction -->
+<EB type="Walker" visual="Walker.png" x="1268" y="265" width="500" height="500" controll_level="1" _displaylabel="true"/>
+<sprite _label="bar_long" _color="0x00ff55" visual="bar_long.png" type="Beam.BeamSprite" controll_level="6" x="1452" y="6" width="2849" height="7" angle="0" restitution="1" static="true" friction="0.5" density="5" firstframe="bar_long.png" setName="Sprite_8"/>
+<sprite _label="pumpkin" _color="0xff0000" visual="pumpkin.png" type="Enemy.EnemySprite" controll_level="5" x="1268" y="466" width="60" height="60" angle="0" restitution="0.2" static="false" friction="0.5" density="5" classname="PumpkinSprite" spawnEvent="onCreateBoulder" firstframe="pumpkin.png"/>
+<sprite type="Cannon.Cannon" controll_level="1" x="-20" y="277" width="20" height="20" event="onCreateBoulder" freq="120" max="10"/>
+<sprite _label="ammo" _color="0xffff00" visual="crate.png" type="Crate.CrateSprite" controll_level="4" x="290" y="29" width="32" height="32" static="false" angle="0"/>
+<sprite _label="ammo" _color="0xffff00" visual="crate.png" type="Crate.CrateSprite" controll_level="4" x="2165" y="229" width="32" height="32" static="false" angle="0"/>
+<sprite _label="bullet_time" _color="0xffff00" visual="bullet_time_pickup.png" type="BulletTimePickup.BulletTimePickupSprite" controll_level="4" x="331" y="31" width="32" height="32" static="false" angle="0"/>
+<sprite _label="bullet_time" _color="0xffff00" visual="bullet_time_pickup.png" type="BulletTimePickup.BulletTimePickupSprite" controll_level="4" x="628" y="225" width="32" height="32" static="false" angle="0"/>
+<sprite _label="ammo" _color="0xffff00" visual="crate.png" type="Crate.CrateSprite" controll_level="4" x="863" y="330" width="32" height="32" static="false" angle="0"/>
+<sprite _label="ammo" _color="0xffff00" visual="crate.png" type="Crate.CrateSprite" controll_level="4" x="1860" y="388" width="32" height="32" static="false" angle="0"/>
+<sprite _label="ammo" _color="0xffff00" visual="crate.png" type="Crate.CrateSprite" controll_level="4" x="2347" y="168" width="32" height="32" static="false" angle="0"/>
+<sprite _label="ammo" _color="0xffff00" visual="crate.png" type="Crate.CrateSprite" controll_level="4" x="2006" y="301" width="32" height="32" static="false" angle="0"/>
+<sprite _label="ammo" _color="0xffff00" visual="crate.png" type="Crate.CrateSprite" controll_level="4" x="2347" y="168" width="32" height="32" static="false" angle="0"/>
+<sprite visual="sign.png" type="Visual.VisualSprite" controll_level="1" x="185" y="35" width="250" height="50" firstframe="sign.png" msg="WARNING!#Alien gravity ahead>>"/>
+<!-- END Monster construction -->
+
+<sprite type="Teleporter.TeleporterSprite" level_id="leveldata/level_3_9_2"/>
+</level>

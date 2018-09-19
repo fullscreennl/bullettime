@@ -1,0 +1,5 @@
+{
+	MainTemplateFile = "class.mm";
+	CounterpartTemplateFile = "class.h";
+	Description = "Template for HealthController";
+}

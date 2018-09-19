@@ -1,0 +1,11 @@
+<level texture='monstersheet1'>
+<sprite type = 'Hero.HeroSprite' x='55' y='40'/>
+<sprite type = 'Bullet.BulletSprite' x='0' y='0' width='10' height='10' angle='0' restitution='0.5' static='false' friction='0.5' density='3' spawnEvent='onShoot'/>
+
+<!-- BEGIN Monster construction -->
+<EB _color="0xcccc33" type="Conversation" x="1905" y="248" width="500" height="500" pass_args="1" msg="Delicia can't we#just run away#together? nobody#will find us here*??*it's nice#and quiet.*No vince#i'm sorry#we can't.#it's just too#dangerous*how much#longer do we#have to#wait?*it's going to#be tough but#i'll make it#worthwile#i promise!*#" controll_level="1" _displaylabel="true"/>
+<sprite visual="sign.png" type="Visual.VisualSprite" controll_level="1" x="250" y="25" width="250" height="50" firstframe="sign.png" msg="the end of the world party#be there or be square!"/>
+<!-- END Monster construction -->
+
+<sprite type="Teleporter.TeleporterSprite" level_id="leveldata/level_2_0_1"/>
+</level>

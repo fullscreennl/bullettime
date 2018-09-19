@@ -1,0 +1,26 @@
+<level texture='monstersheet1'>
+<sprite type = 'Hero.HeroSprite' x='55' y='40'/>
+<sprite type = 'Bullet.BulletSprite' x='0' y='0' width='10' height='10' angle='0' restitution='0.5' static='false' friction='0.5' density='3' spawnEvent='onShoot'/>
+
+<!-- BEGIN Monster construction -->
+<EB _color="0xcccc33" visual="watchtower.png" type="Watchtower" x="308" y="249" width="500" height="500" controll_level="1" _displaylabel="true"/>
+<sprite _label="brick" _color="0x00ff55" visual="rect.png" type="Beam.BeamSprite" controll_level="6" x="1236" y="68" width="47" height="43" angle="0" restitution="0.2" static="true" friction="0.5" density="5"/>
+<sprite _label="brick" _color="0x00ff55" visual="rect.png" type="Beam.BeamSprite" controll_level="6" x="457" y="63" width="47" height="43" angle="0" restitution="0.2" static="true" friction="0.5" density="5"/>
+<sprite _label="brick" _color="0x00ff55" visual="rect.png" type="Beam.BeamSprite" controll_level="6" x="463" y="299" width="47" height="43" angle="0" restitution="0.2" static="true" friction="0.5" density="5" setName="Sprite_1"/>
+<sprite _label="brick" _color="0x00ff55" visual="rect.png" type="Beam.BeamSprite" controll_level="6" x="1236" y="295" width="47" height="43" angle="0" restitution="0.2" static="true" friction="0.5" density="5" setName="Sprite_7"/>
+<sprite _label="s1" _color="0xff0000" visual="seqpumpkin1.png" type="Enemy.EnemySprite" controll_level="5" x="867" y="263" width="56" height="56" angle="0" restitution="0.2" static="false" friction="0.5" density="5" classname="SeqPumpkinSprite" firstframe="seqpumpkin.png" spritedata="1" setName="Sprite_4"/>
+<sprite _label="s2" _color="0xff0000" visual="seqpumpkin2.png" type="Enemy.EnemySprite" controll_level="5" x="713" y="272" width="102" height="101" angle="0" restitution="0.2" static="false" friction="0.5" density="5" classname="SeqPumpkinSprite" firstframe="seqpumpkin.png" spritedata="2" setName="Sprite_5"/>
+<sprite _label="s3" _color="0xff0000" visual="seqpumpkin3.png" type="Enemy.EnemySprite" controll_level="5" x="1129" y="292" width="80" height="80" angle="0" restitution="0.2" static="false" friction="0.5" density="5" classname="SeqPumpkinSprite" firstframe="seqpumpkin.png" spritedata="3" setName="Sprite_6"/>
+<sprite _label="s4" _color="0xff0000" visual="seqpumpkin4.png" type="Enemy.EnemySprite" controll_level="5" x="979" y="272" width="73" height="73" angle="0" restitution="0.2" static="false" friction="0.5" density="5" classname="SeqPumpkinSprite" firstframe="seqpumpkin.png" spritedata="4" setName="Sprite_3"/>
+<sprite _label="s5" _color="0xff0000" visual="seqpumpkin5.png" type="Enemy.EnemySprite" controll_level="5" x="570" y="275" width="58" height="58" angle="0" restitution="0.2" static="false" friction="0.5" density="5" classname="SeqPumpkinSprite" firstframe="seqpumpkin.png" spritedata="5" setName="Sprite_2"/>
+<sprite _label="Toxic_round" shape="circ" _color="0xaaaaff" visual="nucleair_round.png" type="ToxicUnit.ToxicUnit" controll_level="5" x="686" y="53" width="102" height="101" angle="0" restitution="0.2" static="false" friction="0.5" density="5" classname="ToxicUnit" firstframe="nucleair_round.png"/>
+<joint type="Joints.DistanceJoint" id="0" body1="Sprite_2" body2="Sprite_1" damping="0.2" freq="20" texture_type="line" texture="rect.png" texture_width="20" b1_Xoffset="-19" b1_Yoffset="-3" b2_Xoffset="-3" b2_Yoffset="2" bx="460" by="301" ax="551" ay="272"/>
+<joint type="Joints.DistanceJoint" id="1" body1="Sprite_5" body2="Sprite_2" damping="0.2" freq="20" texture_type="line" texture="rect.png" texture_width="20" b1_Xoffset="-34" b1_Yoffset="-14" b2_Xoffset="21" b2_Yoffset="-8" bx="591" by="267" ax="679" ay="258"/>
+<joint type="Joints.DistanceJoint" id="2" body1="Sprite_4" body2="Sprite_5" damping="0.2" freq="20" texture_type="line" texture="rect.png" texture_width="20" b1_Xoffset="-18" b1_Yoffset="-4" b2_Xoffset="36" b2_Yoffset="4" bx="749" by="276" ax="849" ay="259"/>
+<joint type="Joints.DistanceJoint" id="3" body1="Sprite_3" body2="Sprite_4" damping="0.2" freq="20" texture_type="line" texture="rect.png" texture_width="20" b1_Xoffset="-24" b1_Yoffset="2" b2_Xoffset="16" b2_Yoffset="-1" bx="883" by="262" ax="955" ay="274"/>
+<joint type="Joints.DistanceJoint" id="4" body1="Sprite_6" body2="Sprite_3" damping="0.2" freq="20" texture_type="line" texture="rect.png" texture_width="20" b1_Xoffset="-22" b1_Yoffset="-9" b2_Xoffset="26" b2_Yoffset="-3" bx="1005" by="269" ax="1107" ay="283"/>
+<joint type="Joints.DistanceJoint" id="5" body1="Sprite_7" body2="Sprite_6" damping="0.2" freq="20" texture_type="line" texture="rect.png" texture_width="20" b1_Xoffset="-6" b1_Yoffset="6" b2_Xoffset="29" b2_Yoffset="3" bx="1158" by="295" ax="1230" ay="301"/>
+<!-- END Monster construction -->
+
+<sprite type="Teleporter.TeleporterSprite" level_id="leveldata/level_8_1_2"/>
+</level>

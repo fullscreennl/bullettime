@@ -1,0 +1,35 @@
+<level texture='monstersheet1'>
+<sprite type = 'Hero.HeroSprite' x='55' y='40'/>
+<sprite type = 'Bullet.BulletSprite' x='0' y='0' width='10' height='10' angle='0' restitution='0.5' static='false' friction='0.5' density='3' spawnEvent='onShoot'/>
+
+<!-- BEGIN Monster construction -->
+<sprite _label="bar_long" _color="0x00ff55" visual="bar_long.png" type="Beam.BeamSprite" controll_level="6" x="1032" y="93" width="102" height="23" angle="0" restitution="0.2" static="false" friction="0.5" density="5" firstframe="bar_long.png" setName="Sprite_5"/>
+<sprite _label="brick" _color="0x00ff55" visual="rect.png" type="Beam.BeamSprite" controll_level="6" x="1028" y="8" width="423" height="17" angle="0" restitution="0.2" static="true" friction="0.5" density="5" setName="Sprite_6"/>
+<sprite _label="bar_long" _color="0x00ff55" visual="bar_long.png" type="Beam.BeamSprite" controll_level="6" x="1436" y="272" width="1511" height="17" angle="0" restitution="0.2" static="false" friction="0.5" density="5" firstframe="bar_long.png" setName="Sprite_7"/>
+<sprite _label="green_blob" _color="0xff0000" visual="monsterblob.png" type="Enemy.EnemySprite" controll_level="5" x="2013" y="184" width="65" height="65" angle="0" restitution="0.2" static="false" friction="0.5" density="5" classname="BlobSprite" firstframe="monsterblob.png" setName="Sprite_8"/>
+<sprite _label="scroll_strat" _color="0x00ff55" visual="rect.png" type="Beam.BeamSprite" controll_level="6" x="2060" y="288" width="10" height="10" angle="0" restitution="0.2" static="false" friction="0.5" density="5" classname="SimpleScrollStrategySprite" setName="Sprite_9"/>
+<sprite visual="boulder.png" type="Friend.FriendSprite" controll_level="5" x="2154" y="452" width="97" height="97" angle="0" restitution="0.2" static="true" friction="0.01" density="1" firstframe="boulder.png"/>
+<sprite _label="ammo" _color="0xffff00" visual="crate.png" type="Crate.CrateSprite" controll_level="4" x="1880" y="301" width="32" height="32" static="false" angle="0" setName="Sprite_12"/>
+<sprite _label="ammo" _color="0xffff00" visual="crate.png" type="Crate.CrateSprite" controll_level="4" x="1843" y="300" width="32" height="32" static="false" angle="0" setName="Sprite_11"/>
+<sprite _label="ammo" _color="0xffff00" visual="crate.png" type="Crate.CrateSprite" controll_level="4" x="1809" y="301" width="32" height="32" static="false" angle="0" setName="Sprite_10"/>
+<sprite _label="brick" _color="0x00ff55" visual="rect.png" type="Beam.BeamSprite" controll_level="6" x="1847" y="283" width="184" height="8" angle="0" restitution="0.2" static="false" friction="0.5" density="5" setName="Sprite_26"/>
+<sprite _label="spinner" _color="0xff0000" visual="lovable_alien.png" type="Enemy.EnemySprite" controll_level="5" x="867" y="46" width="58" height="58" angle="0" restitution="0.2" static="false" friction="0.5" density="5" classname="LoveAlienSprite" firstframe="lovable_alien.png" setName="Sprite_3"/>
+<sprite _label="brick" _color="0x00ff55" visual="rect.png" type="Beam.BeamSprite" controll_level="6" x="1156" y="48" width="31" height="59" angle="0" restitution="0.2" static="false" friction="0.5" density="5" setName="Sprite_36"/>
+<sprite _label="brick" _color="0x00ff55" visual="rect.png" type="Beam.BeamSprite" controll_level="6" x="1154" y="96" width="55" height="34" angle="0" restitution="0.2" static="false" friction="0.5" density="5" setName="Sprite_46"/>
+<sprite _label="brick" _color="0x00ff55" visual="rect.png" type="Beam.BeamSprite" controll_level="6" x="912" y="49" width="29" height="63" angle="0" restitution="0.2" static="false" friction="0.5" density="5" setName="Sprite_86"/>
+<sprite _label="brick" _color="0x00ff55" visual="rect.png" type="Beam.BeamSprite" controll_level="6" x="909" y="101" width="49" height="39" angle="0" restitution="0.2" static="false" friction="0.5" density="5" setName="Sprite_96"/>
+<joint type="Joints.DistanceJoint" id="0" body1="Sprite_7" body2="Sprite_5" damping="0.2" freq="20" texture_type="line" texture="rect.png" texture_width="20" b1_Xoffset="-523" b1_Yoffset="0" b2_Xoffset="-43" b2_Yoffset="1" bx="989" by="94" ax="913" ay="272"/>
+<joint type="Joints.RevoluteJoint" id="1" body1="Sprite_5" body2="Sprite_6" motor_speed="5.0" torque="30000.0" enable_motor="true" lower_angle="12" upper_angle="45" enable_limit="false" collide_connected="false" bx="1033" by="9" ax="1032" ay="95" b1_Xoffset="0" b1_Yoffset="2" b2_Xoffset="5" b2_Yoffset="1"/>
+<joint type="Joints.RevoluteJoint" id="2" body1="Sprite_7" body2="Sprite_6" motor_speed="50.0" torque="1000.0" enable_motor="false" lower_angle="12" upper_angle="45" enable_limit="false" collide_connected="false" bx="1060" by="10" b2_Xoffset="32" b2_Yoffset="2" ax="1307" ay="271" b1_Xoffset="-129" b1_Yoffset="-1"/>
+<joint type="Joints.DistanceJoint" id="3" body1="Sprite_8" body2="Sprite_7" damping="0.2" freq="2" texture_type="line" texture="rect.png" texture_width="20" b1_Xoffset="-1" b1_Yoffset="4" b2_Xoffset="582" b2_Yoffset="2" bx="2018" by="274" ax="2012" ay="188"/>
+<joint type="Joints.RevoluteJoint" id="5" body1="Sprite_9" body2="Sprite_7" motor_speed="50.0" torque="1000.0" enable_motor="false" lower_angle="12" upper_angle="45" enable_limit="false" collide_connected="false" bx="2044" by="273" b2_Xoffset="608" b2_Yoffset="1" ax="2060" ay="284" b1_Xoffset="0" b1_Yoffset="-4"/>
+<joint type="Joints.RevoluteJoint" id="6" body1="Sprite_26" body2="Sprite_7" motor_speed="50.0" torque="1000.0" enable_motor="false" lower_angle="12" upper_angle="45" enable_limit="false" collide_connected="false" bx="1765" by="270" b2_Xoffset="329" b2_Yoffset="-2" ax="1766" ay="283" b1_Xoffset="-81" b1_Yoffset="0"/>
+<joint type="Joints.DistanceJoint" id="7" body1="Sprite_7" body2="Sprite_10" damping="0.2" freq="20" texture_type="none" texture="rect.png" texture_width="20" b1_Xoffset="368" b1_Yoffset="4" b2_Xoffset="-6" b2_Yoffset="0" bx="1803" by="301" ax="1804" ay="276"/>
+<joint type="Joints.DistanceJoint" id="8" body1="Sprite_7" body2="Sprite_11" damping="0.2" freq="20" texture_type="none" texture="rect.png" texture_width="20" b1_Xoffset="405" b1_Yoffset="-3" b2_Xoffset="5" b2_Yoffset="0" bx="1848" by="300" ax="1841" ay="269"/>
+<joint type="Joints.DistanceJoint" id="9" body1="Sprite_7" body2="Sprite_12" damping="0.2" freq="20" texture_type="none" texture="rect.png" texture_width="20" b1_Xoffset="447" b1_Yoffset="0" b2_Xoffset="-2" b2_Yoffset="-1" bx="1878" by="300" ax="1883" ay="272"/>
+<joint type="Joints.RevoluteJoint" id="10" body1="Sprite_26" body2="Sprite_7" motor_speed="50.0" torque="1000.0" enable_motor="false" lower_angle="12" upper_angle="45" enable_limit="false" collide_connected="false" bx="1929" by="268" b2_Xoffset="493" b2_Yoffset="-4" ax="1921" ay="283" b1_Xoffset="74" b1_Yoffset="0"/>
+<joint type="Joints.DistanceJoint" id="11" body1="Sprite_6" body2="Sprite_3" damping="0.2" freq="1" texture_type="line" texture="rect.png" texture_width="20" b1_Xoffset="-79" b1_Yoffset="-1" b2_Xoffset="1" b2_Yoffset="-5" bx="868" by="41" ax="949" ay="7"/>
+<!-- END Monster construction -->
+
+<sprite type="Teleporter.TeleporterSprite" level_id="leveldata/level_8_7_1"/>
+</level>

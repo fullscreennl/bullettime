@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>soundFXMuted</key>
+	<false/>
+	<key>flipControls</key>
+	<false/>
+	<key>calibrationOffset</key>
+	<integer>0</integer>
+	<key>useGameCenter</key>
+	<false/>
+	<key>userHasRated</key>
+	<false/>
+</dict>
+</plist>

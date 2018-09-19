@@ -1,0 +1,18 @@
+<level texture='monstersheet3'>
+<sprite type = 'Hero.HeroSprite' x='55' y='40'/>
+<sprite type = 'Bullet.BulletSprite' x='0' y='0' width='10' height='10' angle='0' restitution='0.5' static='false' friction='0.5' density='3' spawnEvent='onShoot'/>
+
+<!-- BEGIN Monster construction -->
+<EB _color="0xffffff" visual="JibberLeg.png" type="JibberLeg" x="2041" y="249" width="500" height="500" controll_level="1" _displaylabel="true"/>
+<sprite _label="brick" _color="0x00ff55" visual="rect.png" type="Beam.BeamSprite" controll_level="6" x="1174" y="405" width="188" height="67" angle="-90" restitution="0.2" static="true" friction="0.5" density="5"/>
+<sprite _label="brick" _color="0x00ff55" visual="rect.png" type="Beam.BeamSprite" controll_level="6" x="1176" y="85" width="173" height="100" angle="-90" restitution="0.2" static="true" friction="0.5" density="5"/>
+<sprite _label="brick" _color="0x00ff55" visual="rect.png" type="Beam.BeamSprite" controll_level="6" x="681" y="71" width="257" height="14" angle="37" restitution="0.2" static="true" friction="0.5" density="5"/>
+<sprite visual="boulder.png" type="Friend.FriendSprite" controll_level="5" x="270" y="22" width="47" height="47" angle="0" restitution="0.5" static="false" friction="0.2" density="1" firstframe="boulder.png"/>
+<sprite _label="green_blob" _color="0xff0000" visual="monsterblob.png" type="Enemy.EnemySprite" controll_level="5" x="2826" y="173" width="89" height="89" angle="0" restitution="0.2" static="false" friction="0.5" density="5" classname="BlobSprite" firstframe="monsterblob.png"/>
+<sprite _label="Utra-Toxic_round" shape="circ" _color="0xaaaaff" visual="ultra_nucleair_round.png" type="UltraToxicUnit.UltraToxicUnit" controll_level="5" x="1176" y="243" width="133" height="133" angle="0" restitution="0.2" static="false" friction="0.5" density="5" classname="UltraToxicUnit" firstframe="ultra_nucleair_round.png"/>
+<sprite visual="boulder.png" type="Friend.FriendSprite" controll_level="5" x="1296" y="62" width="128" height="128" angle="0" restitution="0.2" static="false" friction="0.5" density="1" firstframe="boulder.png"/>
+<sprite type="Alert.Alert" controll_level="1" x="145" y="249" width="100" height="500" name="ImageAlert" msg="green_explained.png"/>
+<!-- END Monster construction -->
+
+<sprite type="Teleporter.TeleporterSprite" level_id="leveldata/level_3_5_1"/>
+</level>

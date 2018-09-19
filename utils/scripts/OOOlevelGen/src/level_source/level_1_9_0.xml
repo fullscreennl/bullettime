@@ -1,0 +1,42 @@
+<level texture='monstersheet1'>
+<sprite type = 'Hero.HeroSprite' x='55' y='40'/>
+<sprite type = 'Bullet.BulletSprite' x='0' y='0' width='10' height='10' angle='0' restitution='0.5' static='false' friction='0.5' density='3' spawnEvent='onShoot'/>
+
+<!-- BEGIN Monster construction -->
+<EB _color="0xcccc33" visual="watchtower.png" type="Watchtower" x="650" y="250" width="500" height="500" controll_level="1" _displaylabel="true"/>
+<EB _color="0xcccc33" visual="watchtower.png" type="Watchtower" x="959" y="249" width="500" height="500" controll_level="1" _displaylabel="true"/>
+<EB _color="0xcccc33" visual="watchtower.png" type="Watchtower" x="2332" y="247" width="500" height="500" controll_level="1" _displaylabel="true"/>
+<EB _color="0xcccc33" visual="watchtower.png" type="Watchtower" x="1920" y="247" width="500" height="500" controll_level="1" _displaylabel="true"/>
+<EB _color="0xcccc33" visual="watchtower.png" type="Watchtower" x="1586" y="247" width="500" height="500" controll_level="1" _displaylabel="true"/>
+<EB _color="0xcccc33" visual="watchtower.png" type="Watchtower" x="1269" y="249" width="500" height="500" controll_level="1" _displaylabel="true"/>
+<sprite _label="ammo" _color="0xffff00" visual="crate.png" type="Crate.CrateSprite" controll_level="4" x="2030" y="52" width="32" height="32" static="false" angle="-1"/>
+<sprite _label="ammo" _color="0xffff00" visual="crate.png" type="Crate.CrateSprite" controll_level="4" x="2679" y="148" width="32" height="32" static="false" angle="-1"/>
+<sprite _label="ammo" _color="0xffff00" visual="crate.png" type="Crate.CrateSprite" controll_level="4" x="105" y="71" width="32" height="32" static="false" angle="-1"/>
+<sprite _label="ammo" _color="0xffff00" visual="crate.png" type="Crate.CrateSprite" controll_level="4" x="2501" y="14" width="32" height="32" static="false" angle="-1"/>
+<sprite _label="ammo" _color="0xffff00" visual="crate.png" type="Crate.CrateSprite" controll_level="4" x="2030" y="16" width="32" height="32" static="false" angle="-1"/>
+<sprite _label="ammo" _color="0xffff00" visual="crate.png" type="Crate.CrateSprite" controll_level="4" x="708" y="70" width="32" height="32" static="false" angle="-1"/>
+<sprite _label="ammo" _color="0xffff00" visual="crate.png" type="Crate.CrateSprite" controll_level="4" x="2726" y="28" width="32" height="32" static="false" angle="-1"/>
+<sprite _label="green_blob" _color="0xff0000" visual="monsterblob.png" type="Enemy.EnemySprite" controll_level="5" x="1012" y="15" width="28" height="28" angle="0" restitution="0.2" static="false" friction="0.5" density="5" classname="BlobSprite" firstframe="monsterblob.png"/>
+<sprite _label="green_blob" _color="0xff0000" visual="monsterblob.png" type="Enemy.EnemySprite" controll_level="5" x="1331" y="16" width="28" height="28" angle="0" restitution="0.2" static="false" friction="0.5" density="5" classname="BlobSprite" firstframe="monsterblob.png"/>
+<sprite _label="green_blob" _color="0xff0000" visual="monsterblob.png" type="Enemy.EnemySprite" controll_level="5" x="1671" y="15" width="28" height="28" angle="0" restitution="0.2" static="false" friction="0.5" density="5" classname="BlobSprite" firstframe="monsterblob.png"/>
+<sprite _label="medical" _color="0xffff00" visual="medical.png" type="Pickup.PickupSprite" controll_level="4" x="190" y="15" width="32" height="32" static="false" angle="0"/>
+<sprite _label="medical" _color="0xffff00" visual="medical.png" type="Pickup.PickupSprite" controll_level="4" x="192" y="94" width="32" height="32" static="false" angle="0"/>
+<sprite _label="medical" _color="0xffff00" visual="medical.png" type="Pickup.PickupSprite" controll_level="4" x="155" y="92" width="32" height="32" static="false" angle="0"/>
+<sprite _label="medical" _color="0xffff00" visual="medical.png" type="Pickup.PickupSprite" controll_level="4" x="191" y="56" width="32" height="32" static="false" angle="0"/>
+<sprite _label="medical" _color="0xffff00" visual="medical.png" type="Pickup.PickupSprite" controll_level="4" x="155" y="54" width="32" height="32" static="false" angle="0"/>
+<sprite _label="medical" _color="0xffff00" visual="medical.png" type="Pickup.PickupSprite" controll_level="4" x="153" y="14" width="32" height="32" static="false" angle="0"/>
+<sprite visual="sign.png" type="Visual.VisualSprite" controll_level="1" x="309" y="22" width="250" height="50" firstframe="sign.png" msg="Do you have faith in medicine?"/>
+<sprite _label="ammo" _color="0xffff00" visual="crate.png" type="Crate.CrateSprite" controll_level="4" x="2685" y="29" width="32" height="32" static="false" angle="-1"/>
+<sprite _label="ammo" _color="0xffff00" visual="crate.png" type="Crate.CrateSprite" controll_level="4" x="2704" y="108" width="32" height="32" static="false" angle="-1"/>
+<sprite _label="ammo" _color="0xffff00" visual="crate.png" type="Crate.CrateSprite" controll_level="4" x="2659" y="105" width="32" height="32" static="false" angle="-1"/>
+<sprite _label="ammo" _color="0xffff00" visual="crate.png" type="Crate.CrateSprite" controll_level="4" x="2728" y="71" width="32" height="32" static="false" angle="-1"/>
+<sprite _label="ammo" _color="0xffff00" visual="crate.png" type="Crate.CrateSprite" controll_level="4" x="2688" y="70" width="32" height="32" static="false" angle="-1"/>
+<sprite _label="ammo" _color="0xffff00" visual="crate.png" type="Crate.CrateSprite" controll_level="4" x="2645" y="67" width="32" height="32" static="false" angle="-1"/>
+<sprite _label="ammo" _color="0xffff00" visual="crate.png" type="Crate.CrateSprite" controll_level="4" x="2648" y="28" width="32" height="32" static="false" angle="-1"/>
+<sprite _label="ammo" _color="0xffff00" visual="crate.png" type="Crate.CrateSprite" controll_level="4" x="2726" y="28" width="32" height="32" static="false" angle="-1"/>
+<sprite _label="bullet_time" _color="0xffff00" visual="bullet_time_pickup.png" type="BulletTimePickup.BulletTimePickupSprite" controll_level="4" x="646" y="19" width="32" height="32" static="false" angle="0"/>
+<sprite _label="bullet_time" _color="0xffff00" visual="bullet_time_pickup.png" type="BulletTimePickup.BulletTimePickupSprite" controll_level="4" x="1266" y="17" width="32" height="32" static="false" angle="0"/>
+<!-- END Monster construction -->
+
+<sprite type="Teleporter.TeleporterSprite" level_id="leveldata/level_1_9_1"/>
+</level>

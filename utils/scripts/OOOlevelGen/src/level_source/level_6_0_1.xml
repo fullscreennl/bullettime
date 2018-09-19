@@ -1,0 +1,22 @@
+<level texture='monstersheet1'>
+<sprite type = 'Hero.HeroSprite' x='55' y='40'/>
+<sprite type = 'Bullet.BulletSprite' x='0' y='0' width='10' height='10' angle='0' restitution='0.5' static='false' friction='0.5' density='3' spawnEvent='onShoot'/>
+
+<!-- BEGIN Monster construction -->
+<sprite _label="scroll_strat" _color="0x00ff55" visual="rect.png" type="Beam.BeamSprite" controll_level="6" x="1045" y="28" width="40" height="37" angle="0" restitution="0.2" static="false" friction="0.5" density="5" classname="SimpleScrollStrategySprite"/>
+<sprite _label="Toxic_square" shape="rect" _color="0xaaaaff" visual="nucleair_square.png" type="ToxicUnit.ToxicUnit" controll_level="5" x="1045" y="30" width="62" height="62" angle="0" restitution="0.2" static="true" friction="0.5" density="5" classname="ToxicUnit" firstframe="nucleair_square.png"/>
+<sprite _label="Toxic_square" shape="rect" _color="0xaaaaff" visual="nucleair_square.png" type="ToxicUnit.ToxicUnit" controll_level="5" x="1045" y="94" width="62" height="62" angle="0" restitution="0.2" static="true" friction="0.5" density="5" classname="ToxicUnit" firstframe="nucleair_square.png"/>
+<sprite _label="Toxic_square" shape="rect" _color="0xaaaaff" visual="nucleair_square.png" type="ToxicUnit.ToxicUnit" controll_level="5" x="1045" y="158" width="62" height="62" angle="0" restitution="0.2" static="true" friction="0.5" density="5" classname="ToxicUnit" firstframe="nucleair_square.png"/>
+<sprite _label="Toxic_square" shape="rect" _color="0xaaaaff" visual="nucleair_square.png" type="ToxicUnit.ToxicUnit" controll_level="5" x="1046" y="342" width="62" height="62" angle="0" restitution="0.2" static="true" friction="0.5" density="5" classname="ToxicUnit" firstframe="nucleair_square.png"/>
+<sprite _label="Toxic_square" shape="rect" _color="0xaaaaff" visual="nucleair_square.png" type="ToxicUnit.ToxicUnit" controll_level="5" x="1046" y="405" width="62" height="62" angle="0" restitution="0.2" static="true" friction="0.5" density="5" classname="ToxicUnit" firstframe="nucleair_square.png"/>
+<sprite _label="Toxic_square" shape="rect" _color="0xaaaaff" visual="nucleair_square.png" type="ToxicUnit.ToxicUnit" controll_level="5" x="1046" y="467" width="62" height="62" angle="0" restitution="0.2" static="true" friction="0.5" density="5" classname="ToxicUnit" firstframe="nucleair_square.png"/>
+<sprite _label="s5" _color="0xff0000" visual="seqpumpkin5.png" type="Enemy.EnemySprite" controll_level="5" x="2290" y="32" width="67" height="67" angle="0" restitution="0.2" static="false" friction="0.5" density="5" classname="SeqPumpkinSprite" firstframe="seqpumpkin.png" spritedata="5"/>
+<sprite _label="s4" _color="0xff0000" visual="seqpumpkin4.png" type="Enemy.EnemySprite" controll_level="5" x="589" y="49" width="102" height="101" angle="0" restitution="0.2" static="false" friction="0.5" density="5" classname="SeqPumpkinSprite" firstframe="seqpumpkin.png" spritedata="4"/>
+<sprite _label="s3" _color="0xff0000" visual="seqpumpkin3.png" type="Enemy.EnemySprite" controll_level="5" x="1989" y="60" width="122" height="122" angle="0" restitution="0.2" static="false" friction="0.5" density="5" classname="SeqPumpkinSprite" firstframe="seqpumpkin.png" spritedata="3"/>
+<sprite _label="s2" _color="0xff0000" visual="seqpumpkin2.png" type="Enemy.EnemySprite" controll_level="5" x="311" y="44" width="87" height="87" angle="0" restitution="0.2" static="false" friction="0.5" density="5" classname="SeqPumpkinSprite" firstframe="seqpumpkin.png" spritedata="2"/>
+<sprite _label="s1" _color="0xff0000" visual="seqpumpkin1.png" type="Enemy.EnemySprite" controll_level="5" x="1587" y="29" width="58" height="58" angle="0" restitution="0.2" static="false" friction="0.5" density="5" classname="SeqPumpkinSprite" firstframe="seqpumpkin.png" spritedata="1"/>
+<sprite _label="GK_Achievement" _color="0xe4ff00" visual="gamecenter-icon.png" type="GKPickup.GKPickupSprite" controll_level="4" x="1096" y="16" width="32" height="32" static="false" angle="0" spritedata="bt_07"/>
+<!-- END Monster construction -->
+
+<sprite type="Teleporter.TeleporterSprite" level_id="leveldata/level_6_0_2"/>
+</level>

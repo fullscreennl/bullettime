@@ -1,0 +1,19 @@
+<level texture='monstersheet1'>
+<sprite type = 'Hero.HeroSprite' x='200' y='40' spawnEvent='createHero' />
+<sprite type = 'Bullet.BulletSprite' classname='BigBulletSprite' x='0' y='0' width='40' height='40' angle='0' restitution='0.1' static='false' friction='0.9' density='5' spawnEvent='onCanonballReleased' groupIndex='-20'/>
+<sprite type = 'Bullet.BulletSprite' x='0' y='0' width='10' height='10' angle='0' restitution='0.5' static='false' friction='0.5' density='3' spawnEvent='onShoot'/>
+
+<!-- BEGIN Monster construction -->
+<sprite _label="ABCannon" _color="0xffee00" visual="tank_chassis.png" type="ABCannon.ABCannon" controll_level="1" x="321" y="155" width="263" height="263" angle="0" restitution="0.2" static="true" shape="circ" friction="0.5" density="5" classname="ABCannon" firstframe="tank_chassis.png" spritedata="10" groupIndex="-20"/>
+<sprite _label="brick" _color="0x00ff55" visual="rect.png" type="Beam.BeamSprite" controll_level="6" x="411" y="37" width="116" height="24" angle="48" restitution="0.2" static="true" friction="0.5" density="5"/>
+<sprite _label="brick" _color="0x00ff55" visual="rect.png" type="Beam.BeamSprite" controll_level="6" x="228" y="38" width="112" height="24" angle="-55" restitution="0.2" static="true" friction="0.5" density="5"/>
+<sprite _label="bar_long" _color="0x00ff55" visual="bar_long.png" type="Beam.BeamSprite" controll_level="6" x="975" y="129" width="254" height="23" angle="-90" restitution="0.2" static="true" friction="0.5" density="5" firstframe="bar_long.png"/>
+<sprite _label="pumpkin" _color="0xff0000" visual="pumpkin.png" type="Enemy.EnemySprite" controll_level="5" x="976" y="288" width="60" height="60" angle="0" restitution="0.2" static="true" friction="0.5" density="5" classname="PumpkinSprite" firstframe="pumpkin.png"/>
+<sprite _label="ABTarget" _color="0xffee00" visual="ABtarget.png" type="ABTargetScrollFocusSprite.ABTargetScrollFocusSprite" controll_level="1" x="973" y="340" width="20" height="20" angle="0" restitution="0.2" static="false" shape="circ" friction="0.5" density="5" classname="ABTargetScrollFocusSprite" firstframe="pumpkin.png"/>
+<sprite _label="green_blob" _color="0xff0000" visual="monsterblob.png" type="Enemy.EnemySprite" controll_level="5" x="2403" y="41" width="83" height="83" angle="0" restitution="0.2" static="false" friction="0.5" density="5" classname="BlobSprite" firstframe="monsterblob.png"/>
+<sprite _label="HeroReplacement" _color="0xffee00" visual="ABtarget.png" type="ABTargetScrollFocusSprite.ABTargetScrollFocusSprite" controll_level="1" x="2399" y="101" width="20" height="20" angle="0" restitution="0.2" static="false" shape="circ" friction="0.5" density="5" classname="HeroReplacementSprite" firstframe="pumpkin.png"/>
+<sprite _label="bar_long" _color="0x00ff55" visual="bar_long.png" type="Beam.BeamSprite" controll_level="6" x="1077" y="64" width="258" height="8" angle="-33" restitution="0.2" static="true" friction="0.5" density="5" firstframe="bar_long.png"/>
+<!-- END Monster construction -->
+
+<sprite type="Teleporter.TeleporterSprite" level_id="leveldata/level_2_3_2"/>
+</level>

@@ -1,0 +1,24 @@
+<level texture='monstersheet1'>
+<sprite type = 'Hero.HeroSprite' x='55' y='40'/>
+<sprite type = 'Bullet.BulletSprite' x='0' y='0' width='10' height='10' angle='0' restitution='0.5' static='false' friction='0.5' density='3' spawnEvent='onShoot'/>
+
+<!-- BEGIN Monster construction -->
+<EB _color="0xcccc33" type="Conversation" x="796" y="249" width="500" height="500" pass_args="1" msg="hi delicia!*hi vince#the end of#the world#party has#been relocated.*what!?*yes, things were#getting out#of control*but there#will be a#party right?*of course!#i will keep#you informed.*#" controll_level="1" _displaylabel="true"/>
+<sprite visual="dynamite.png" type="Bomb.BombSprite" controll_level="5" x="1689" y="52" width="95" height="95" static="true"/>
+<sprite visual="dynamite.png" type="Bomb.BombSprite" controll_level="5" x="1953" y="42" width="95" height="95" static="true"/>
+<sprite visual="dynamite.png" type="Bomb.BombSprite" controll_level="5" x="1864" y="40" width="80" height="80"/>
+<sprite visual="boulder.png" type="Friend.FriendSprite" controll_level="5" x="1755" y="101" width="34" height="34" angle="0" restitution="0.2" static="false" friction="0.5" density="1" firstframe="boulder.png"/>
+<sprite visual="boulder.png" type="Friend.FriendSprite" controll_level="5" x="1924" y="125" width="34" height="34" angle="0" restitution="0.2" static="false" friction="0.5" density="1" firstframe="boulder.png"/>
+<sprite visual="boulder.png" type="Friend.FriendSprite" controll_level="5" x="1874" y="100" width="34" height="34" angle="0" restitution="0.2" static="false" friction="0.5" density="1" firstframe="boulder.png"/>
+<sprite visual="boulder.png" type="Friend.FriendSprite" controll_level="5" x="1855" y="180" width="34" height="34" angle="0" restitution="0.2" static="false" friction="0.5" density="1" firstframe="boulder.png"/>
+<sprite visual="boulder.png" type="Friend.FriendSprite" controll_level="5" x="1814" y="177" width="34" height="34" angle="0" restitution="0.2" static="false" friction="0.5" density="1" firstframe="boulder.png"/>
+<sprite visual="boulder.png" type="Friend.FriendSprite" controll_level="5" x="1793" y="100" width="34" height="34" angle="0" restitution="0.2" static="false" friction="0.5" density="1" firstframe="boulder.png"/>
+<sprite _label="pumpkin" _color="0xff0000" visual="pumpkin.png" type="Enemy.EnemySprite" controll_level="5" x="1838" y="368" width="49" height="49" angle="0" restitution="0.2" static="false" friction="0.5" density="5" classname="PumpkinSprite" firstframe="pumpkin.png"/>
+<sprite _label="brick" _color="0x00ff55" visual="rect.png" type="Beam.BeamSprite" controll_level="6" x="1836" y="317" width="111" height="52" angle="0" restitution="0.2" static="true" friction="0.5" density="5" setName="Sprite_6"/>
+<sprite _label="pumpkin" _color="0xff0000" visual="pumpkin.png" type="Enemy.EnemySprite" controll_level="5" x="1834" y="100" width="36" height="36" angle="0" restitution="0.2" static="false" friction="0.5" density="5" classname="PumpkinSprite" firstframe="pumpkin.png"/>
+<sprite _label="brick" _color="0x00ff55" visual="rect.png" type="Beam.BeamSprite" controll_level="6" x="1833" y="139" width="113" height="30" angle="0" restitution="0.2" static="false" friction="0.5" density="5" setName="Sprite_6"/>
+<sprite _label="spinner" _color="0xff0000" visual="lovable_alien.png" type="Enemy.EnemySprite" controll_level="5" x="1779" y="36" width="71" height="71" angle="0" restitution="0.2" static="false" friction="0.5" density="5" classname="LoveAlienSprite" firstframe="lovable_alien.png"/>
+<!-- END Monster construction -->
+
+<sprite type="Teleporter.TeleporterSprite" level_id="leveldata/level_6_0_1"/>
+</level>

@@ -1,0 +1,22 @@
+<level texture='monstersheet1'>
+<sprite type = 'Hero.HeroSprite' x='55' y='40'/>
+<sprite type = 'Bullet.BulletSprite' x='0' y='0' width='10' height='10' angle='0' restitution='0.5' static='false' friction='0.5' density='3' spawnEvent='onShoot'/>
+
+<!-- BEGIN Monster construction -->
+<sprite visual="dynamite.png" type="Bomb.BombSprite" controll_level="5" x="1142" y="38" width="76" height="76" static="false" angle="1"/>
+<sprite _label="brick" _color="0x00ff55" visual="rect.png" type="Beam.BeamSprite" controll_level="6" x="740" y="16" width="17" height="105" angle="-117" restitution="0.2" static="true" friction="0.5" density="5"/>
+<sprite _label="Toxic_round" shape="circ" _color="0xaaaaff" visual="nucleair_round.png" type="ToxicUnit.ToxicUnit" controll_level="5" x="15" y="483" width="125" height="125" angle="2" restitution="0.2" static="true" friction="0.5" density="5" classname="ToxicUnit" firstframe="nucleair_round.png" setName="Sprite_20"/>
+<sprite _label="brick" _color="0x00ff55" visual="rect.png" type="Beam.BeamSprite" controll_level="6" x="1120" y="115" width="90" height="68" angle="-1" restitution="0.2" static="true" friction="0.5" density="5"/>
+<sprite _label="brick" _color="0x00ff55" visual="rect.png" type="Beam.BeamSprite" controll_level="6" x="1147" y="181" width="90" height="68" angle="-1" restitution="0.2" static="true" friction="0.5" density="5"/>
+<sprite _label="brick" _color="0x00ff55" visual="rect.png" type="Beam.BeamSprite" controll_level="6" x="1108" y="248" width="90" height="68" angle="-1" restitution="0.2" static="true" friction="0.5" density="5"/>
+<sprite _label="brick" _color="0x00ff55" visual="rect.png" type="Beam.BeamSprite" controll_level="6" x="1129" y="318" width="90" height="68" angle="-1" restitution="0.2" static="true" friction="0.5" density="5"/>
+<sprite _label="brick" _color="0x00ff55" visual="rect.png" type="Beam.BeamSprite" controll_level="6" x="1106" y="390" width="90" height="68" angle="-1" restitution="0.2" static="true" friction="0.5" density="5"/>
+<sprite _label="brick" _color="0x00ff55" visual="rect.png" type="Beam.BeamSprite" controll_level="6" x="1133" y="461" width="90" height="68" angle="-1" restitution="0.2" static="true" friction="0.5" density="5"/>
+<EB _color="0xcccc33" visual="watchtower.png" type="Watchtower" x="2021" y="248" width="500" height="500" controll_level="1" _displaylabel="true"/>
+<sprite _label="green_blob" _color="0xff0000" visual="monsterblob.png" type="Enemy.EnemySprite" controll_level="5" x="26" y="357" width="45" height="45" angle="0" restitution="0.2" static="false" friction="0.5" density="5" classname="BlobSprite" firstframe="monsterblob.png" setName="Sprite_21"/>
+<sprite _label="ammo" _color="0xffff00" visual="crate.png" type="Crate.CrateSprite" controll_level="4" x="1172" y="236" width="32" height="32" static="false" angle="0"/>
+<joint type="Joints.DistanceJoint" id="8" body1="Sprite_21" body2="Sprite_20" damping="0.2" freq="20" texture_type="line" texture="rect.png" texture_width="20" b1_Xoffset="-3" b1_Yoffset="14" b2_Xoffset="5" b2_Yoffset="7" bx="20" by="490" ax="23" ay="371"/>
+<!-- END Monster construction -->
+
+<sprite type="Teleporter.TeleporterSprite" level_id="leveldata/level_6_4_2"/>
+</level>

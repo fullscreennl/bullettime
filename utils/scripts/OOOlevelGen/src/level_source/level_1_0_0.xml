@@ -1,0 +1,13 @@
+<level texture='monstersheet1'>
+<sprite type = 'Hero.HeroSprite' x='55' y='40'/>
+<sprite type = 'Bullet.BulletSprite' x='0' y='0' width='10' height='10' angle='0' restitution='0.5' static='false' friction='0.5' density='3' spawnEvent='onShoot'/>
+
+<!-- BEGIN Monster construction -->
+<EB _color="0xcccc33" type="Conversation" x="1133" y="248" width="500" height="500" pass_args="1" msg="I dont't think#i will make it#to the party#delicia.*of course you#will, you must!*There are just#too many.#the green#ones are#killing me.*You have to#keep faith.#there are no#options*??*i've always#had a crush#on you we#must meet#at the party!*!*#" controll_level="1" _displaylabel="true"/>
+<sprite _label="pumpkin" _color="0xff0000" visual="pumpkin.png" type="Enemy.EnemySprite" controll_level="5" x="2048" y="49" width="102" height="101" angle="0" restitution="0.2" static="false" friction="0.5" density="5" classname="PumpkinSprite" firstframe="pumpkin.png" shape="rect"/>
+<sprite _label="Toxic_round" shape="circ" _color="0xaaaaff" visual="nucleair_round.png" type="ToxicUnit.ToxicUnit" controll_level="5" x="2045" y="191" width="164" height="164" angle="0" restitution="0.2" static="false" friction="0.5" density="5" classname="ToxicUnit" firstframe="nucleair_round.png"/>
+<sprite _label="GK_Achievement" _color="0xe4ff00" visual="gamecenter-icon.png" type="GKPickup.GKPickupSprite" controll_level="4" x="2125" y="15" width="32" height="32" static="false" angle="0" spritedata="bt_02"/>
+<!-- END Monster construction -->
+
+<sprite type="Teleporter.TeleporterSprite" level_id="leveldata/level_1_0_1"/>
+</level>

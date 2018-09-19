@@ -1,0 +1,18 @@
+<level texture='monstersheet1'>
+<sprite type = 'Hero.HeroSprite' x='55' y='40'/>
+<sprite type = 'Bullet.BulletSprite' x='0' y='0' width='10' height='10' angle='0' restitution='0.5' static='false' friction='0.5' density='3' spawnEvent='onShoot'/>
+
+<!-- BEGIN Monster construction -->
+<sprite _label="brick" _color="0x00ff55" visual="rect.png" type="Beam.BeamSprite" controll_level="6" x="1055" y="464" width="105" height="33" angle="25" restitution="0.2" static="true" friction="0.5" density="5" setName="Sprite_4"/>
+<sprite visual="dynamite.png" type="Bomb.BombSprite" controll_level="5" x="1065" y="58" width="80" height="80" static="false" angle="4"/>
+<sprite _label="bar_long" _color="0x00ff55" visual="bar_long.png" type="Beam.BeamSprite" controll_level="6" x="1009" y="316" width="366" height="20" angle="90" restitution="0.2" static="true" friction="0.5" density="5" firstframe="bar_long.png" setName="Sprite_6"/>
+<sprite _label="bar_long" _color="0x00ff55" visual="bar_long.png" type="Beam.BeamSprite" controll_level="6" x="1119" y="149" width="300" height="24" angle="90" restitution="0.2" static="true" friction="0.5" density="5" firstframe="bar_long.png" setName="Sprite_6"/>
+<sprite _label="pumpkin" _color="0xff0000" visual="pumpkin.png" type="Enemy.EnemySprite" controll_level="5" x="1054" y="129" width="60" height="60" angle="0" restitution="0.2" static="false" friction="0.5" density="1" classname="PumpkinSprite" firstframe="pumpkin.png"/>
+<sprite _label="pumpkin" _color="0xff0000" visual="pumpkin.png" type="Enemy.EnemySprite" controll_level="5" x="1085" y="165" width="38" height="38" angle="0" restitution="0.2" static="false" friction="0.5" density="1" classname="PumpkinSprite" firstframe="pumpkin.png"/>
+<sprite visual="boulder.png" type="Friend.FriendSprite" controll_level="5" x="283" y="49" width="98" height="98" angle="0" restitution="0.2" static="false" friction="0.5" density="1" firstframe="boulder.png"/>
+<sprite _label="bar_long" _color="0x00ff55" visual="bar_long.png" type="Beam.BeamSprite" controll_level="6" x="929" y="5" width="367" height="5" angle="3" restitution="0.2" static="true" friction="0.5" density="5" firstframe="bar_long.png" setName="Sprite_6"/>
+<sprite visual="sign.png" type="Visual.VisualSprite" controll_level="1" x="250" y="25" width="250" height="50" firstframe="sign.png" msg="stepping stone!" static="false"/>
+<!-- END Monster construction -->
+
+<sprite type="Teleporter.TeleporterSprite" level_id="leveldata/level_0_4_1"/>
+</level>

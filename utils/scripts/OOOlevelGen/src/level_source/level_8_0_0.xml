@@ -1,0 +1,10 @@
+<level texture='monstersheet1'>
+<sprite type = 'Hero.HeroSprite' x='55' y='40'/>
+<sprite type = 'Bullet.BulletSprite' x='0' y='0' width='10' height='10' angle='0' restitution='0.5' static='false' friction='0.5' density='3' spawnEvent='onShoot'/>
+
+<!-- BEGIN Monster construction -->
+<EB _color="0xcccc33" type="Conversation" x="1316" y="249" width="500" height="500" pass_args="1" msg="delicia, we are#getting closer to#the party!#i can feel it!*yes vince#we are!#but don't forget#to pick up things#we will need it!*oooh yes!#don't worry!*#" controll_level="1" _displaylabel="true"/>
+<!-- END Monster construction -->
+
+<sprite type="Teleporter.TeleporterSprite" level_id="leveldata/level_8_0_1"/>
+</level>

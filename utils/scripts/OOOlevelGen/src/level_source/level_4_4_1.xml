@@ -1,0 +1,24 @@
+<level texture='monstersheet6'>
+<sprite type = 'Hero.HeroSprite' x='200' y='40' spawnEvent='createHero' />
+<sprite type = 'Bullet.BulletSprite' classname='BigBulletSprite' x='0' y='0' width='40' height='40' angle='0' restitution='0.1' static='false' friction='0.9' density='5' spawnEvent='onCanonballReleased' groupIndex='-20'/>
+<sprite type = 'Bullet.BulletSprite' x='0' y='0' width='10' height='10' angle='0' restitution='0.5' static='false' friction='0.5' density='3' spawnEvent='onShoot'/>
+
+<!-- BEGIN Monster construction -->
+<EB type="WalkingPigTail" visual="WalkingPigTail.png" x="1909" y="246" width="500" height="500" controll_level="1" _displaylabel="true"/>
+<sprite _label="ABCannon" _color="0xffee00" visual="tank_chassis.png" type="ABCannon.ABCannon" controll_level="1" x="536" y="179" width="263" height="263" angle="0" restitution="0.2" static="true" shape="circ" friction="0.5" density="5" classname="ABCannon" firstframe="tank_chassis.png" spritedata="3" groupIndex="-20" setName="Sprite_1"/>
+<sprite _label="ABTarget" _color="0xffee00" visual="ABtarget.png" type="ABTargetScrollFocusSprite.ABTargetScrollFocusSprite" controll_level="1" x="2164" y="212" width="20" height="20" angle="0" restitution="0.2" static="false" shape="circ" friction="0.5" density="5" classname="ABTargetScrollFocusSprite" firstframe="pumpkin.png"/>
+<sprite visual="boulder.png" type="Friend.FriendSprite" controll_level="5" x="358" y="63" width="82" height="82" angle="0" restitution="0.2" static="false" friction="0.5" density="1" firstframe="boulder.png" setName="Sprite_2"/>
+<sprite visual="boulder.png" type="Friend.FriendSprite" controll_level="5" x="724" y="62" width="128" height="128" angle="0" restitution="0.2" static="false" friction="0.5" density="1" firstframe="boulder.png" setName="Sprite_3"/>
+<sprite _label="bar_long" _color="0x00ff55" visual="bar_long.png" type="Beam.BeamSprite" controll_level="6" x="1232" y="121" width="539" height="25" angle="30" restitution="0.2" static="true" friction="0.5" density="5" firstframe="bar_long.png"/>
+<sprite _label="Utra-Toxic_round" shape="circ" _color="0xaaaaff" visual="ultra_nucleair_round.png" type="UltraToxicUnit.UltraToxicUnit" controll_level="5" x="1181" y="143" width="56" height="56" angle="0" restitution="0.2" static="false" friction="0.5" density="1" classname="UltraToxicUnit" firstframe="ultra_nucleair_round.png"/>
+<sprite _label="brick" _color="0x00ff55" visual="rect.png" type="Beam.BeamSprite" controll_level="6" x="1146" y="99" width="50" height="21" angle="32" restitution="0.2" static="true" friction="0.5" density="5"/>
+<sprite _label="bar_long" _color="0x00ff55" visual="bar_long.png" type="Beam.BeamSprite" controll_level="6" x="1448" y="426" width="152" height="23" angle="92" restitution="0.2" static="true" friction="0.5" density="5" firstframe="bar_long.png"/>
+<sprite visual="boulder.png" type="Friend.FriendSprite" controll_level="5" x="2197" y="19" width="49" height="49" angle="0" restitution="0.2" static="false" friction="0.5" density="1" firstframe="boulder.png"/>
+<joint type="Joints.DistanceJoint" id="2" body1="Sprite_2" body2="Sprite_1" damping="0.2" freq="20" texture_type="line" texture="rect.png" texture_width="20" b1_Xoffset="-1" b1_Yoffset="6" b2_Xoffset="-105" b2_Yoffset="34" bx="431" by="213" ax="357" ay="69"/>
+<joint type="Joints.DistanceJoint" id="3" body1="Sprite_1" body2="Sprite_3" damping="0.2" freq="20" texture_type="line" texture="rect.png" texture_width="20" b1_Xoffset="96" b1_Yoffset="36" b2_Xoffset="-1" b2_Yoffset="0" bx="723" by="62" ax="632" ay="215"/>
+<joint type="Joints.DistanceJoint" id="4" body1="Sprite_2" body2="Sprite_1" damping="0.2" freq="20" texture_type="line" texture="rect.png" texture_width="20" b1_Xoffset="0" b1_Yoffset="3" b2_Xoffset="84" b2_Yoffset="10" bx="620" by="189" ax="358" ay="66"/>
+<joint type="Joints.DistanceJoint" id="5" body1="Sprite_1" body2="Sprite_3" damping="0.2" freq="20" texture_type="line" texture="rect.png" texture_width="20" b1_Xoffset="-100" b1_Yoffset="7" b2_Xoffset="-1" b2_Yoffset="0" bx="723" by="62" ax="436" ay="186"/>
+<!-- END Monster construction -->
+
+<sprite type="Teleporter.TeleporterSprite" level_id="leveldata/level_4_4_2"/>
+</level>
