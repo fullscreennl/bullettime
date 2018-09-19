@@ -321,8 +321,11 @@
 													  disabledSprite:nil 
 															  target:self 
 															selector:@selector(stopToScrollManually:)];
-    item5.visible = NO;    
-    int offset = 80;
+    item5.visible = NO;
+    int offset = 40;
+    if(viewportW > 568){
+        offset = 80;
+    }
     if(!ipad){
         item.position = ccp(-50 - offset, 110);
         item.scale = 0.8;
