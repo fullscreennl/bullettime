@@ -1,2 +1,2 @@
 # bullettime
-BUllettime End of the world party!
+Bullettime: End of the world party!
