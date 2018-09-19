@@ -272,9 +272,10 @@
 	
 	//CCSprite *bg = [CCSprite spriteWithSpriteFrameName:@"square_monsterblob.png"];
 	CCSprite *bg = [CCSprite spriteWithSpriteFrameName:@"sliding_menu_bg.png"];
-	bg.position = ccp(220,160);
+    
+	bg.position = ccp(220,175);
 	//bg.scaleY = 3.0;
-	
+	bg.scale = 1.3f;
 	CCSprite *sprite1 = [CCSprite spriteWithSpriteFrameName:@"reset_btn.png"];
 	CCSprite *sprite1sel = [CCSprite spriteWithSpriteFrameName:@"reset_btn_sel.png"];
 	CCMenuItemSprite *item = [CCMenuItemSprite itemFromNormalSprite:sprite1 
@@ -320,15 +321,16 @@
     item5.visible = NO;    
     
     if(!ipad){
-        item.position = ccp(-50,110);
+        int generic_offset = 80;
+        item.position = ccp(-50 - generic_offset,110);
         item.scale = 0.8;
-        item2.position = ccp(-50,-70);
+        item2.position = ccp(-50 - generic_offset,-70);
         item2.scale = 0.8;
-        item3.position = ccp(0,20);
+        item3.position = ccp(0 - generic_offset,20);
         item3.scale = 0.8;
-        skipbtn.position = ccp(0,-140);
+        skipbtn.position = ccp(0 - generic_offset,-140);
         skipbtn.scale = 0.4;
-        item5.position = ccp(-75,20);
+        item5.position = ccp(-75 - generic_offset,20);
         if(![ABCannon get] && ![OOOSpritePresenceTable hasID:@"conversation"]){
             item5.scale = 0.6;
             item5.visible = YES;
