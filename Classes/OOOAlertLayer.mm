@@ -35,8 +35,8 @@ static OOOAlertLayer *layer=nil;
         viewportHW = viewportW/2;
         ipad = YES;
     }else{
-        viewportH = 320;
-        viewportW = 480;
+        viewportH = 375;
+        viewportW = 667;
         viewportHH = viewportH/2;
         viewportHW = viewportW/2;
         ipad = NO;
@@ -190,7 +190,7 @@ static OOOAlertLayer *layer=nil;
     
     float yoffset = 40.0;
 
-	int arrayCount = [msgs count];
+	uint arrayCount = [msgs count];
 	for (int i = 0; i < arrayCount; i++) {
         if(i != 1){
             titleLabel = [CCLabelBMFont labelWithString:[msgs objectAtIndex:i] fntFile:MAIN_FONT];
@@ -232,7 +232,7 @@ static OOOAlertLayer *layer=nil;
 	lines = [[NSMutableArray alloc]init];
     float yoffset = 200.0;
 
-	int arrayCount = [msgs count];
+	uint arrayCount = [msgs count];
 	for (int i = 0; i < arrayCount; i++) {
 		titleLabel = [CCLabelBMFont labelWithString:[msgs objectAtIndex:i] fntFile:MAIN_FONT];
         
@@ -360,14 +360,17 @@ static OOOAlertLayer *layer=nil;
             cadre.scaleX = 0.98f;
         }
 	}
-	
-	dialog_bg.position =ccp(screenSize.width/2,viewportH + 320);
+    int viewportheight = 375;
+    int viewportwidth = 667;
+	dialog_bg.position =ccp(screenSize.width/2,viewportH + viewportheight);
+    dialog_bg.scaleY= 1.2f;
+    dialog_bg.scaleX= 1.40f;
 	[self addChild:dialog_bg];
     id moveAction;
     if(ipad){
         moveAction=  [CCMoveBy actionWithDuration:0.6 position: ccp(0,-320-160-124)];
     }else{
-        moveAction = [CCMoveBy actionWithDuration:0.6 position: ccp(0,-320-160)];        
+        moveAction = [CCMoveBy actionWithDuration:0.6 position: ccp(0,-1.5*viewportheight)];
     }
 	id ease_action = [CCEaseIn actionWithAction:moveAction rate:2];
 	
@@ -386,7 +389,7 @@ static OOOAlertLayer *layer=nil;
 	int arrayCount = [msgs count];
 	float textFieldHeight = 220.0;
 	float effectiveHeight = arrayCount*40.0;
-	float startPos = 320.0 - (textFieldHeight - effectiveHeight)/2.0; 
+	float startPos = 320 - (textFieldHeight - effectiveHeight)/2.0;
 	
 	for (int i = 0; i < arrayCount; i++) {
 		titleLabel = [CCLabelBMFont labelWithString:[msgs objectAtIndex:i] fntFile:MAIN_FONT];
