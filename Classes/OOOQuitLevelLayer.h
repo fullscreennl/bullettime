@@ -44,6 +44,7 @@
     CCMenuItemSprite *skipbtn;
     CCSprite *sprite4;
     BOOL settings_click_disabled;
+    CGSize screenSize;
 }
 +(id)layer; 
 -(void)goMenu: (id) sender;
