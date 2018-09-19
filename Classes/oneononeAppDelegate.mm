@@ -46,6 +46,9 @@
 #endif // GAME_AUTOROTATION == kGameAutorotationUIViewController	
 }
 
+-(CGSize)getScreenSize{
+    return CGSizeMake(screenWidth, screenHeight);
+}
 
 - (void) applicationDidFinishLaunching:(UIApplication*)application
 {
@@ -54,7 +57,8 @@
 	// Init the window
 	window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     NSLog(@"bounds here: %@", NSStringFromCGRect([[UIScreen mainScreen] bounds]));
-
+    screenWidth = [[UIScreen mainScreen] bounds].size.width;
+    screenHeight = [[UIScreen mainScreen] bounds].size.height;
 	// cocos2d will inherit these values
 	[window setUserInteractionEnabled:YES];	
 	[window setMultipleTouchEnabled:YES];
