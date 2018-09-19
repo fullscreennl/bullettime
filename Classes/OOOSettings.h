@@ -24,7 +24,7 @@
 	CCSprite *friendDoodleSilentSpr;
 	NSMutableDictionary * settings; 
 	CCLabelBMFont *jumpshootLabel;
-    
+    CGSize screenSize;
     int viewportW;
     int viewportH;
     int viewportHW;

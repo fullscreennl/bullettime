@@ -777,7 +777,7 @@
     if(ipad){
         [ai setCenter:CGPointMake(768-75, 75)];   
     }else{
-        [ai setCenter:CGPointMake(320-75, 75)];
+        [ai setCenter:CGPointMake(screenSize.height-75, 75)];
     }
 	[[[CCDirector sharedDirector] openGLView]  addSubview:ai];
 }

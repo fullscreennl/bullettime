@@ -10,6 +10,7 @@
 #import "OOOGameSettingsManager.h"
 #import "cocos2d.h"
 #import "OOOConfig.h"
+#import "oneononeAppDelegate.h"
 
 @implementation OOOCalibratorAccelorator
 
@@ -35,8 +36,8 @@
         viewportHW = viewportW/2;
         ipad = YES;
     }else{
-        viewportH = 375;
-        viewportW = 667;
+        viewportH = screenSize.height;
+        viewportW = screenSize.width    ;
         viewportHH = viewportH/2;
         viewportHW = viewportW/2;
         ipad = NO;
@@ -47,6 +48,7 @@
 -(id) init
 {
 	if( (self=[super init])) {
+        screenSize = [(oneononeAppDelegate*)[[UIApplication sharedApplication] delegate] getScreenSize];
 		[self sniffDeviceEnv];
 		settings = [[OOOGameSettingsManager sharedManager] getSettings];
 		

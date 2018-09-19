@@ -15,7 +15,7 @@
 	NSMutableDictionary *settings;
 	CCSprite *ind;
 	CCSpriteBatchNode *sheet;
-    
+    CGSize screenSize;
     int viewportW;
     int viewportH;
     int viewportHW;
