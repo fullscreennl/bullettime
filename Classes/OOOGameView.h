@@ -66,7 +66,7 @@
 	float accelY;
 	int scrollMode;
 	int scollPosSwitchSpeed;
-	
+    CGSize screenSize;
 	BOOL controllsEnabled;
     OOOSharedInputRecorder *uir;
     OOORecordedFrameData *currentRecordingFrame;

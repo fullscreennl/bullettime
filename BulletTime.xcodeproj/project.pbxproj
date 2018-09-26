@@ -133,6 +133,7 @@
 		50F4143910692D7D002A0D5E /* GLES-Render.mm in Sources */ = {isa = PBXBuildFile; fileRef = 50F4143810692D7D002A0D5E /* GLES-Render.mm */; };
 		9000E9FE14059E000005DF99 /* woods_bullet_time.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9000E9FD14059E000005DF99 /* woods_bullet_time.mp3 */; };
 		903A74EC13F879E700BC9D2D /* sfx_tankdoor.wav in Resources */ = {isa = PBXBuildFile; fileRef = 903A74EB13F879E700BC9D2D /* sfx_tankdoor.wav */; };
+		905F1654215B67B600BCC3C0 /* AccelerometerSimulation.m in Sources */ = {isa = PBXBuildFile; fileRef = 905F1652215B67B500BCC3C0 /* AccelerometerSimulation.m */; };
 		9065B2A513F94F9E00C91695 /* cadre.png in Resources */ = {isa = PBXBuildFile; fileRef = 9065B2A413F94F9E00C91695 /* cadre.png */; };
 		90865B731403A6B3009DC3A1 /* sfx_hippo_auch.wav in Resources */ = {isa = PBXBuildFile; fileRef = 90865B701403A6B3009DC3A1 /* sfx_hippo_auch.wav */; };
 		90865B741403A6B3009DC3A1 /* sfx_hippo_die.wav in Resources */ = {isa = PBXBuildFile; fileRef = 90865B711403A6B3009DC3A1 /* sfx_hippo_die.wav */; };
@@ -858,6 +859,8 @@
 		50F4143810692D7D002A0D5E /* GLES-Render.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "GLES-Render.mm"; sourceTree = "<group>"; };
 		9000E9FD14059E000005DF99 /* woods_bullet_time.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = woods_bullet_time.mp3; sourceTree = "<group>"; };
 		903A74EB13F879E700BC9D2D /* sfx_tankdoor.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = sfx_tankdoor.wav; sourceTree = "<group>"; };
+		905F1652215B67B500BCC3C0 /* AccelerometerSimulation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccelerometerSimulation.m; sourceTree = "<group>"; };
+		905F1653215B67B500BCC3C0 /* AccelerometerSimulation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccelerometerSimulation.h; sourceTree = "<group>"; };
 		9065B2A413F94F9E00C91695 /* cadre.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cadre.png; sourceTree = "<group>"; };
 		90865B701403A6B3009DC3A1 /* sfx_hippo_auch.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = sfx_hippo_auch.wav; sourceTree = "<group>"; };
 		90865B711403A6B3009DC3A1 /* sfx_hippo_die.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = sfx_hippo_die.wav; sourceTree = "<group>"; };
@@ -1741,6 +1744,7 @@
 		2D500B1D0D5A766B00DBA0E3 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				905F1651215B678C00BCC3C0 /* AccelerometerSimulator */,
 				FAA4C30B12E8F5F200BBD95B /* Crusher */,
 				90E5C93D12C50B5A00CF634C /* CustomSprites */,
 				90E5C93412C50B5900CF634C /* behaviours */,
@@ -2131,6 +2135,15 @@
 				90E5CA0212C5349200CF634C /* settings.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		905F1651215B678C00BCC3C0 /* AccelerometerSimulator */ = {
+			isa = PBXGroup;
+			children = (
+				905F1653215B67B500BCC3C0 /* AccelerometerSimulation.h */,
+				905F1652215B67B500BCC3C0 /* AccelerometerSimulation.m */,
+			);
+			path = AccelerometerSimulator;
 			sourceTree = "<group>";
 		};
 		90E5C92312C50B5900CF634C /* speachBubble */ = {
@@ -3766,6 +3779,7 @@
 				FA570CC31312B9FB004C3E70 /* LittleCrawlerLimb.mm in Sources */,
 				FA570CD31312BE38004C3E70 /* LittleCrawlerFace.mm in Sources */,
 				FAAF85AE1319BB1B00775BFA /* StryderFace.mm in Sources */,
+				905F1654215B67B600BCC3C0 /* AccelerometerSimulation.m in Sources */,
 				FABA7FBB131BA50800E737B2 /* SteppingFuckerBrain.mm in Sources */,
 				FABA7FBC131BA50800E737B2 /* SteppingFuckerHealthController.mm in Sources */,
 				FABA7FBD131BA50800E737B2 /* SteppingFuckerLimb.mm in Sources */,

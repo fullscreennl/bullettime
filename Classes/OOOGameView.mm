@@ -26,7 +26,8 @@
 #import "OOOSharedInputRecorder.h"
 
 #import "OOOAchievementManager.h"
-
+#import "AccelerometerSimulation.h"
+#import "oneononeAppDelegate.h"
 
 @implementation OOOGameView
 
@@ -94,7 +95,7 @@ static int numobjects = 0;
 -(id) init
 {
 	if( (self=[super init])) {
-        
+        screenSize = [(oneononeAppDelegate*)[[UIApplication sharedApplication] delegate] getScreenSize];
         [self sniffDeviceEnv];
         
 		[OOOGameView addInstance];
@@ -251,8 +252,8 @@ static int numobjects = 0;
         viewportHW = viewportW/2;
         ipadZoomCompensation = 2.13333;
     }else{
-        viewportH = 375;
-        viewportW = 667;
+        viewportH = screenSize.height;
+        viewportW = screenSize.width;
         viewportHH = viewportH/2;
         viewportHW = viewportW/2;
         ipadZoomCompensation = 1.4;
