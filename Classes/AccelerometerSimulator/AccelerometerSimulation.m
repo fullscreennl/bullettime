@@ -65,6 +65,9 @@ static AccelerometerSimulation *sharedAccelerometer = NULL;
 
 @implementation AccelerometerSimulation
 
+    int leftBtn;
+    int rightBtn;
+
 // this is straight from developer guide example for multi-threaded notifications
 - (void) setUpThreadingSupport {
     if ( notifications ) return;
@@ -109,7 +112,29 @@ static AccelerometerSimulation *sharedAccelerometer = NULL;
 								   Z:[[components objectAtIndex:4] doubleValue]];
 		[accelDelegate accelerometer:self didAccelerate:(UIAcceleration*)accObject];
         if(components[5] != nil){
-            NSLog(@"key pressed!!! %f", [components[5] doubleValue]);
+            //NSLog(@"key pressed!!! %f", [components[5] doubleValue]);
+            
+            if ( [components[5] intValue] == 2 || [components[5] intValue] == 3 ){
+                if (leftBtn == 0) {
+                    [[NSNotificationCenter defaultCenter] postNotificationName:@"onSwipe" object:nil userInfo:nil];
+                    leftBtn = 1;
+                }
+            }
+            if([components[5] intValue]== 1 || [components[5] intValue] == 3){
+                if(rightBtn == 0){
+                    [[NSNotificationCenter defaultCenter] postNotificationName:@"onFire" object:nil userInfo:nil];
+                    rightBtn = 1;
+                }
+            }
+           
+            if( [components[5] intValue] == 0 ){
+                if(leftBtn == 1){
+                    [[NSNotificationCenter defaultCenter] postNotificationName:@"onJumpingStopped" object:nil userInfo:nil];
+                }
+                leftBtn = 0;
+                rightBtn = 0;
+                
+            }
         }
     }
 }

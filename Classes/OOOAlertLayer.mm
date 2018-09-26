@@ -367,10 +367,13 @@ static OOOAlertLayer *layer=nil;
 	}
     int viewportheight = screenSize.height;
     int viewportwidth = screenSize.width;
-	dialog_bg.position =ccp(screenSize.width/2,viewportH + viewportheight);
-    
-    dialog_bg.scaleY= screenSize.height / 320.0f;
-    dialog_bg.scaleX= screenSize.width / 480.0f;
+	dialog_bg.position = ccp(screenSize.width/2,viewportH + viewportheight);
+    if (!ipad) {
+        dialog_bg.scaleY= screenSize.height / 320.0f;
+        dialog_bg.scaleX= screenSize.width / 480.0f;
+    }else{
+        dialog_bg.position = ccp(screenSize.width/2,viewportH + 320);
+    }
 	[self addChild:dialog_bg];
     id moveAction;
     if(ipad){
