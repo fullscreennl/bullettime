@@ -16,6 +16,7 @@
 #import "HeroSprite.h"
 #import "AnimatedSpeachBubble.h"
 #import "OOORatingRequest.h"
+#import "oneononeAppDelegate.h"
 
 @implementation OOOAlertLayer
 
@@ -35,8 +36,8 @@ static OOOAlertLayer *layer=nil;
         viewportHW = viewportW/2;
         ipad = YES;
     }else{
-        viewportH = 375;
-        viewportW = 667;
+        viewportH = screenSize.height;
+        viewportW = screenSize.width;
         viewportHH = viewportH/2;
         viewportHW = viewportW/2;
         ipad = NO;
@@ -46,6 +47,7 @@ static OOOAlertLayer *layer=nil;
 -(id) init
 {
 	if( (self=[super init])) {
+        screenSize = [(oneononeAppDelegate*)[[UIApplication sharedApplication] delegate] getScreenSize];
 		[self sniffDeviceEnv];
 		self.isTouchEnabled = YES;
 
@@ -77,6 +79,9 @@ static OOOAlertLayer *layer=nil;
 		imageAlertYpos =-130;
 		//textAlertYpos =-80;
         raterequest = [[OOORatingRequest alloc] init];
+        //NSLog(@"delegate %@ ",[(oneononeAppDelegate*)[[UIApplication sharedApplication] delegate] getScreenSize]);
+        
+        //NSLog(@"screen dimmies: %@, %f", NSStringFromCGSize(screenSize), screenSize.width);
 	}
 	return self;
 }
@@ -360,11 +365,12 @@ static OOOAlertLayer *layer=nil;
             cadre.scaleX = 0.98f;
         }
 	}
-    int viewportheight = 375;
-    int viewportwidth = 667;
+    int viewportheight = screenSize.height;
+    int viewportwidth = screenSize.width;
 	dialog_bg.position =ccp(screenSize.width/2,viewportH + viewportheight);
-    dialog_bg.scaleY= 1.2f;
-    dialog_bg.scaleX= 1.40f;
+    
+    dialog_bg.scaleY= screenSize.height / 320.0f;
+    dialog_bg.scaleX= screenSize.width / 480.0f;
 	[self addChild:dialog_bg];
     id moveAction;
     if(ipad){

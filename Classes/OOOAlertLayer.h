@@ -19,6 +19,7 @@
 	BOOL pressed;
 	NSMutableArray *menuItems;
 	float imageAlertYpos;
+    CGSize screenSize;
 	//float textAlertYpos;
     
     int viewportW;

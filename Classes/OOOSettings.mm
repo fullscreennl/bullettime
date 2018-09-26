@@ -12,6 +12,7 @@
 #import "OOOConfig.h"
 #import "OOOGameSettingsManager.h"
 #import"OOOCalibratorAccelorator.h"
+#import "oneononeAppDelegate.h"
 
 @implementation OOOSettings
 
@@ -34,17 +35,13 @@
 {
 	UITouch *touch = [touches anyObject];
 	CGPoint location = [touch locationInView: [touch view]];
-	//NSLog(@"touches pos: %3f",location.x);
-	if (location.x>viewportHH + 15.0 and location.x<viewportHH + 80) {
+//    NSLog(@"touches pos x: %3f",location.x);
+//    NSLog(@"touches pos y: %3f",location.y);
+	if (location.y<viewportHH and location.y> 80) {
 		[self toggleSound];
-	}else if(location.x>viewportHH - 80 and location.x< viewportHH + 10) {
+	}else if(location.y>viewportHH  and location.y< viewportH + 80) {
 		[self setControlFlip];
 	}
-	/*
-	else if(location.x>0 and location.x<70.0f) {
-		[self setCalibration];
-	}*/
-	
 }
 
 -(void)setControlFlip
@@ -186,8 +183,8 @@
         viewportHW = viewportW/2;
         ipad = YES;
     }else{
-        viewportH = 375;
-        viewportW = 667;
+        viewportH = screenSize.height;
+        viewportW = screenSize.width;
         viewportHH = viewportH/2;
         viewportHW = viewportW/2;
         ipad = NO;
@@ -197,6 +194,7 @@
 -(id) init
 {
 	if( (self=[super init])) {
+        screenSize = [(oneononeAppDelegate*)[[UIApplication sharedApplication] delegate] getScreenSize];
         [self sniffDeviceEnv];
 		self.isTouchEnabled = YES;
 		/*
@@ -297,8 +295,6 @@
 		
 		[menu addChild:subItem2 z:2 tag:2];
 		subItem2.position = ccp(110, -105);
-		
-		
 		
 		
 		[self addChild:menu];		

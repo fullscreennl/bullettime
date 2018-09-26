@@ -36,9 +36,13 @@
 	OOOTransition *cutscene;
 	OOORemoteLevelLoader *rll;
     BOOL isDrawingLevel;
+    int screenWidth;
+    int screenHeight;
+    
 }
 ///for testing a level
 -(void)testLevel;
+-(CGSize)getScreenSize;
 
 @property (nonatomic, retain) UIWindow *window;
 

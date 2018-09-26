@@ -11,6 +11,7 @@
 #import "OOOConfig.h"
 #import "OOOSharedResourceManager.h"
 #import "ABCannon.h"
+#import "oneononeAppDelegate.h"
 
 @implementation OOOResourceView
 
@@ -66,15 +67,15 @@
 -(void)build{
     
     //NSLog(@">>>> >>> draw!!!!");
-    
+    CGSize screenSize = [(oneononeAppDelegate*)[[UIApplication sharedApplication] delegate] getScreenSize];
     float yoffset;
     float xoffset;
     if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad){
         xoffset = 1024 - 400.0;
         yoffset = 768.0 - 60;       
     }else{
-        xoffset = 667 - 400.0;
-        yoffset = 375.0;
+        xoffset = screenSize.width - 400.0;
+        yoffset = screenSize.height;
     }
 	
     bg = [CCSprite spriteWithSpriteFrameName:@"meters.png"];

@@ -16,6 +16,7 @@
 #import "ABCannon.h"
 #import "OOOSpritePresenceTable.h"
 #import "OOOStore.h"
+#import "oneononeAppDelegate.h"
 
 @implementation OOOQuitLevelLayer
 
@@ -36,8 +37,8 @@
         menuY = 275;
         moveMenuBy = 240;
     }else{
-        viewportH = 375;
-        viewportW = 667;
+        viewportH = screenSize.height;
+        viewportW = screenSize.width;
         viewportHH = viewportH/2;
         viewportHW = viewportW/2;
         ipad = NO;
@@ -50,7 +51,7 @@
 -(id) init
 {
 	if( (self=[super init])) {
-        
+        screenSize = [(oneononeAppDelegate*)[[UIApplication sharedApplication] delegate] getScreenSize];
         [self sniffDeviceEnv];
         
 		CCSpriteBatchNode *sheet = [CCSpriteBatchNode batchNodeWithFile:@"main_texture.pvr" capacity:150];
@@ -144,6 +145,8 @@
         overlay = [CCSprite spriteWithFile:@"overlay.png"];
 		[self addChild:overlay];
 		overlay.position = ccp(viewportHW,viewportHH);
+        overlay.scaleY = viewportH / 320.0;
+        overlay.scaleX = viewportW / 480.0;
 		overlay.visible = NO;
 		[self drawMiniMenu];
         
@@ -272,8 +275,8 @@
 	
 	//CCSprite *bg = [CCSprite spriteWithSpriteFrameName:@"square_monsterblob.png"];
 	CCSprite *bg = [CCSprite spriteWithSpriteFrameName:@"sliding_menu_bg.png"];
-    
-	bg.position = ccp(220,175);
+
+	bg.position = ccp(220,viewportHH);
 	//bg.scaleY = 3.0;
 	bg.scale = 1.3f;
 	CCSprite *sprite1 = [CCSprite spriteWithSpriteFrameName:@"reset_btn.png"];
@@ -318,19 +321,21 @@
 													  disabledSprite:nil 
 															  target:self 
 															selector:@selector(stopToScrollManually:)];
-    item5.visible = NO;    
-    
+    item5.visible = NO;
+    int offset = 40;
+    if(viewportW > 568){
+        offset = 80;
+    }
     if(!ipad){
-        int generic_offset = 80;
-        item.position = ccp(-50 - generic_offset,110);
+        item.position = ccp(-50 - offset, 110);
         item.scale = 0.8;
-        item2.position = ccp(-50 - generic_offset,-70);
+        item2.position = ccp(-50- offset, -70);
         item2.scale = 0.8;
-        item3.position = ccp(0 - generic_offset,20);
+        item3.position = ccp(0 - offset, 20);
         item3.scale = 0.8;
-        skipbtn.position = ccp(0 - generic_offset,-140);
+        skipbtn.position = ccp(0 - offset, -140);
         skipbtn.scale = 0.4;
-        item5.position = ccp(-75 - generic_offset,20);
+        item5.position = ccp(-75 - offset, 20);
         if(![ABCannon get] && ![OOOSpritePresenceTable hasID:@"conversation"]){
             item5.scale = 0.6;
             item5.visible = YES;
@@ -772,7 +777,7 @@
     if(ipad){
         [ai setCenter:CGPointMake(768-75, 75)];   
     }else{
-        [ai setCenter:CGPointMake(320-75, 75)];
+        [ai setCenter:CGPointMake(screenSize.height-75, 75)];
     }
 	[[[CCDirector sharedDirector] openGLView]  addSubview:ai];
 }
@@ -818,13 +823,9 @@
 	menu.visible = NO;
 	//snapshot_menu.visible = YES;
 	overlay.visible=YES;
-    if(!ipad){
-        overlay.scaleX = 1.0;
-        overlay.scaleY = 1.0;
-    }else{
-        overlay.scaleY = viewportH / 320.0;
-        overlay.scaleX = viewportW / 480.0;
-    }
+    overlay.scaleY = viewportH / 320.0;
+    overlay.scaleX = viewportW / 480.0;
+
     
 	NSDictionary *userinfo = [NSDictionary dictionaryWithObjectsAndKeys:@"bullet_time", @"sound",nil];
     
