@@ -9,14 +9,17 @@
 #import "TeleporterSprite.h"
 #import "OOOGameViewDecorator.h"
 #import "cocos2d.h"
+#import "oneononeAppDelegate.h"
 
 
 @implementation TeleporterSprite
 
+CGSize screenSize;
+
 -(id)init{
 	
 	if( (self=[super init])) {
-		
+		screenSize = [(oneononeAppDelegate*)[[UIApplication sharedApplication] delegate] getScreenSize];
 		[[NSNotificationCenter defaultCenter] addObserver:self 
 												 selector:@selector(onHit:) 
 													 name:@"onTeleporterHit" 
@@ -45,8 +48,8 @@
 
 -(void)displayExitAlert:(NSNotification*)note{
     if( [spriteData isEqualToString:@"leveldata/menu"] ){
-        
-        NSDictionary *userInfo = [NSDictionary dictionaryWithObjectsAndKeys:@"level_cleared.png" ,@"msg",[NSNumber numberWithFloat:2.0],@"time",[NSNumber numberWithFloat:1.2f] ,@"alertScale",nil];
+        CGFloat scale_image = 2.6 *(float)screenSize.height/768.0f;
+        NSDictionary *userInfo = [NSDictionary dictionaryWithObjectsAndKeys:@"level_cleared.png" ,@"msg",[NSNumber numberWithFloat:2.0],@"time",[NSNumber numberWithFloat:scale_image] ,@"alertScale",nil];
 		
 		[[NSNotificationCenter defaultCenter] 
 		 postNotification:[NSNotification 

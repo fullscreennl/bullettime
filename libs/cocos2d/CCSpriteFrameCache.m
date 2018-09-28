@@ -321,7 +321,7 @@ static CCSpriteFrameCache *sharedSpriteFrameCache_=nil;
 
 -(CCSpriteFrame*) spriteFrameByName:(NSString*)name
 {
-	NSLog(@"NAME %@",name);
+	//NSLog(@"NAME %@",name);
     CCSpriteFrame *frame = [spriteFrames_ objectForKey:name];
 	if( ! frame ) {
 		// try alias dictionary

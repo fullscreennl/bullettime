@@ -323,8 +323,12 @@
 															selector:@selector(stopToScrollManually:)];
     item5.visible = NO;
     int offset = 40;
+    NSLog(@"viewport width: %i", viewportW);
     if(viewportW > 568){
         offset = 80;
+    }
+    if(viewportW > 800){
+        offset = 145;
     }
     if(!ipad){
         item.position = ccp(-50 - offset, 110);

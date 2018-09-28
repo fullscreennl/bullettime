@@ -245,11 +245,11 @@ struct transformValues_ {
 
 -(id)initWithSpriteFrameName:(NSString*)spriteFrameName
 {
-	NSLog(@"NAME %@",spriteFrameName);
+	//NSLog(@"NAME %@",spriteFrameName);
     NSAssert(spriteFrameName!=nil, @"Invalid spriteFrameName for sprite");
 
 	CCSpriteFrame *frame = [[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:spriteFrameName];
-    NSLog(@"frame %@",frame);
+   // NSLog(@"frame %@",frame);
 	return [self initWithSpriteFrame:frame];
 }
 

@@ -108,9 +108,10 @@ static AccelerometerSimulation *sharedAccelerometer = NULL;
 		// create our own acceleration object
 		[accObject initWithTimestamp:[[components objectAtIndex:1] doubleValue] 
 								   X:[[components objectAtIndex:2] doubleValue] 
-								   Y:[[components objectAtIndex:3] doubleValue]
+								   Y:[[components objectAtIndex:3] doubleValue]/2.0
 								   Z:[[components objectAtIndex:4] doubleValue]];
 		[accelDelegate accelerometer:self didAccelerate:(UIAcceleration*)accObject];
+
         if(components[5] != nil){
             //NSLog(@"key pressed!!! %f", [components[5] doubleValue]);
             
@@ -135,6 +136,7 @@ static AccelerometerSimulation *sharedAccelerometer = NULL;
                 rightBtn = 0;
                 
             }
+
         }
     }
 }
