@@ -61,36 +61,40 @@
 	
 	[userinfo release];
 	
-	NSDictionary *userinfo2 = [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithFloat:self.position.x+50.0], @"x",
-							  [NSNumber numberWithFloat:50.0f], @"y",
-							  @"Beam",@"name", nil];
-	[userinfo2 retain];
 	
-	[[NSNotificationCenter defaultCenter] 
-	 postNotification:[NSNotification 
-					   notificationWithName:@"onCreateMenuBlock" 
-					   object:nil 
-					   userInfo:userinfo2]];
+    [self spawnExtraStuff];
 	
-	[userinfo2 release];
-	
-	NSNumber *miles = [NSNumber numberWithInt:(100 - (self.position.x-28)/57)];
-	NSString *str = [NSString stringWithFormat:@"End of the world party.#%@ miles >>>",[miles stringValue]];
-	
-	NSDictionary *userinfo3 = [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithFloat:self.position.x+160.0], @"x",
-							   [NSNumber numberWithFloat:25.0], @"y",
-							   str,@"msg", nil];
-	[userinfo3 retain];
-	
-	[[NSNotificationCenter defaultCenter] 
-	 postNotification:[NSNotification 
-					   notificationWithName:@"createMenuSign" 
-					   object:nil 
-					   userInfo:userinfo3]];
-	
-	[userinfo3 release];
-	
-	
+}
+
+-(void)spawnExtraStuff{
+    NSDictionary *userinfo2 = [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithFloat:self.position.x+50.0], @"x",
+                               [NSNumber numberWithFloat:50.0f], @"y",
+                               @"Beam",@"name", nil];
+    [userinfo2 retain];
+    
+    [[NSNotificationCenter defaultCenter]
+     postNotification:[NSNotification
+                       notificationWithName:@"onCreateMenuBlock"
+                       object:nil
+                       userInfo:userinfo2]];
+    
+    [userinfo2 release];
+    
+    NSNumber *miles = [NSNumber numberWithInt:(100 - (self.position.x-28)/57)];
+    NSString *str = [NSString stringWithFormat:@"End of the world party.#%@ miles >>>",[miles stringValue]];
+    
+    NSDictionary *userinfo3 = [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithFloat:self.position.x+190.0], @"x",
+                               [NSNumber numberWithFloat:25.0], @"y",
+                               str,@"msg", nil];
+    [userinfo3 retain];
+    
+    [[NSNotificationCenter defaultCenter]
+     postNotification:[NSNotification
+                       notificationWithName:@"createMenuSign"
+                       object:nil
+                       userInfo:userinfo3]];
+    
+    [userinfo3 release];
 }
 
 -(void)setSpriteData:(NSString *)data{
