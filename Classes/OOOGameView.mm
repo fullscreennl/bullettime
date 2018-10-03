@@ -644,7 +644,7 @@ static int numobjects = 0;
 
 -(void)createCanons{
 	NSArray *cannons = [[level_data objectForKey:@"level"] objectForKey:@"cannons"];
-	int arrayCount = [cannons count];
+	NSUInteger arrayCount = [cannons count];
 	for (int i = 0; i < arrayCount; i++) {
 		[cannon addCannonDef:[cannons objectAtIndex:i]];
 	}
@@ -657,7 +657,7 @@ static int numobjects = 0;
 
 -(void)buildJoints{
 	NSArray *joints = [[level_data objectForKey:@"level"] objectForKey:@"joints"];
-	int arrayCount = [joints count];
+	NSUInteger arrayCount = [joints count];
 	for (int i = 0; i < arrayCount; i++) {
 		if ([[[joints objectAtIndex:i] objectForKey:@"type"]isEqualToString:@"revolute"]){
 			[gameModel createRevJoint:[joints objectAtIndex:i]];
@@ -691,7 +691,7 @@ static int numobjects = 0;
 	
 	//NSLog(@"sheets %@",sheets);
 	
-	int arrayCount = [sheets count];
+	NSUInteger arrayCount = [sheets count];
 	for (int i = 0; i < arrayCount; i++) {
 		NSString *sheetname = nil;
 		
@@ -719,7 +719,7 @@ static int numobjects = 0;
 	eventSpawnTable = [[NSMutableDictionary dictionary]retain];
 	newSpriteList = [[NSMutableArray alloc] init];
 	NSArray *comps = [[level_data objectForKey:@"level"] objectForKey:@"compounds"];
-	int arrayCount = [comps count];
+	NSUInteger arrayCount = [comps count];
 	for (int i = 0; i < arrayCount; i++) {
 		[self drawCompoundWithDict:[comps objectAtIndex:i]];
 	}
@@ -728,7 +728,7 @@ static int numobjects = 0;
 -(void)spawn{
 	NSMutableArray *obj = [spawnque objectForKey:[NSNumber numberWithInt:framecounter]];
 	if (obj){
-		int arrayCount = [obj count];
+		NSUInteger arrayCount = [obj count];
 		for (int i = 0; i < arrayCount; i++) {
 			[self _drawCompoundWithDict:[obj objectAtIndex:i]];
 		}

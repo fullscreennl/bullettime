@@ -238,7 +238,7 @@
 
 -(void)registerContacts:(NSArray *)contacts{
 	cl = new OOOContactListener();
-	int arrayCount = [contacts count];
+	NSUInteger arrayCount = [contacts count];
 	contact_dict = [[NSMutableDictionary dictionary] retain];
 	for (int i = 0; i < arrayCount; i++) {
 		NSString *evt = [[contacts objectAtIndex:i] objectForKey:@"eventName"];
@@ -399,7 +399,7 @@
 	
 	NSArray *shapes = [dict objectForKey:@"shapes"];
 
-	int arrayCount = [shapes count];
+	NSUInteger arrayCount = [shapes count];
 	for (int i = 0; i < arrayCount; i++) {
 		
 		NSDictionary* shape_dict = [shapes objectAtIndex:i];
@@ -432,7 +432,7 @@
 		}else if ([sprite_type isEqual:@"poly"]) {
 			NSString *points_str = [shape_dict objectForKey:@"points_CCW"];
 			NSArray *points_arr = [points_str componentsSeparatedByString:@"#"];
-			int c = [points_arr count];
+			int32 c = (int32)[points_arr count];
 			//b2Vec2 vertices[c];
             b2Vec2 *vertices = new b2Vec2[c];
 
@@ -445,7 +445,7 @@
 			dynamicBox.Set(vertices,c);
 			fixtureDef.shape = &dynamicBox;
             
-            delete vertices;
+            delete[] vertices;
 		}
 		
 		fixtureDef.isSensor = sensor;

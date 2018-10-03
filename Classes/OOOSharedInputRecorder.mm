@@ -92,7 +92,7 @@ static OOOSharedInputRecorder *OOOSharedInputRecorder_ = nil;
         return;
     }
     NSArray *events = (NSArray*)[recordedFrames objectAtIndex:index];
-    int l = [events count];
+    NSUInteger l = [events count];
     for(int i=0; i<l; i++){
         NSNotification *note = (NSNotification*)[events objectAtIndex:i];
         [[NSNotificationCenter defaultCenter] postNotification:note];
@@ -100,7 +100,7 @@ static OOOSharedInputRecorder *OOOSharedInputRecorder_ = nil;
 }
 
 -(void)log{
-    int l = [recordedFrames count];
+    NSUInteger l = [recordedFrames count];
     for(int i=0; i<l; i++){
         //NSArray *frame = (NSArray*)[recordedFrames objectAtIndex:i];
         //NSLog(@"recordedframe id: %@",frame);
