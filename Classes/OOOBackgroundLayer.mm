@@ -225,7 +225,6 @@ enum{
 	for (int i =0; i<arraylen; i++){
 		//ccTexParams params2 = {GL_LINEAR,GL_LINEAR,GL_REPEAT,GL_REPEAT};
         uint r4 = arc4random();
-        NSLog(@"integer from arc4 %ui",r4);
 		float rnd4  = (r4 % 1000)/1000.0;
 		NSString *houseNR = [NSString stringWithString:[[NSNumber numberWithInt:round(rnd4*6)] stringValue]];
 		//CCSprite *house = [CCSprite spriteWithFile:[NSString stringWithFormat:[arr objectAtIndex:3],houseNR]];
