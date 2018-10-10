@@ -85,11 +85,8 @@ enum{
     }else{
         [self drawRepeatingNoRandom];
     }
-    NSLog(@">>>>>>>>>>>>>> testies 1");
 	[self drawRepeating_3];
-    NSLog(@">>>>>>>>>>>>>> testies 2");
     [self playBGSound:[arr objectAtIndex:4]];
-    NSLog(@">>>>>>>>>>>>>> testies 3");
 	[arr release];
 
 }
